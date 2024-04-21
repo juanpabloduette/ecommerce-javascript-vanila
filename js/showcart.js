@@ -4,7 +4,6 @@ const renderCart = () => {
 	} else {
 		modal.style.width = "500px";
 		modal.innerHTML = "";
-		modal.style.display = "block";
 		const modalHeader = document.createElement("div");
 		modalHeader.className = "modal-header";
 		modalHeader.innerHTML = `
@@ -76,6 +75,7 @@ const renderCart = () => {
 		modalButtonBuy.className = "modal-button-buy";
 		modal.append(modalButtonBuy);
 	}
+	modal.style.display = "block";
 };
 
 showCart.addEventListener("click", renderCart);
