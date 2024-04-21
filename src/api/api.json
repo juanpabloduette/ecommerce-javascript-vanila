@@ -345,7 +345,7 @@
     {
         "price": 5000,
         "id": 1150,
-        "title": "producto37",
+        "title": "Battlefield",
         "img": "../src/assets/products/1150a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -354,7 +354,7 @@
     {
         "price": 5000,
         "id": 1151,
-        "title": "producto37",
+        "title": "Battlefield",
         "img": "../src/assets/products/1151a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -363,7 +363,7 @@
     {
         "price": 5000,
         "id": 1152,
-        "title": "producto37",
+        "title": "Battlefield",
         "img": "../src/assets/products/1152a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -372,7 +372,7 @@
     {
         "price": 5000,
         "id": 1153,
-        "title": "producto37",
+        "title": "Battlefield",
         "img": "../src/assets/products/1153a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -381,7 +381,7 @@
     {
         "price": 5000,
         "id": 1154,
-        "title": "producto37",
+        "title": "Battlefield",
         "img": "../src/assets/products/1154a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -390,7 +390,7 @@
     {
         "price": 5000,
         "id": 1155,
-        "title": "producto37",
+        "title": "Battlefield",
         "img": "../src/assets/products/1155a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -399,7 +399,7 @@
     {
         "price": 5000,
         "id": 1180,
-        "title": "producto37",
+        "title": "Fall Guys",
         "img": "../src/assets/products/1180a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -408,7 +408,7 @@
     {
         "price": 5000,
         "id": 1181,
-        "title": "producto37",
+        "title": "Fall Guys",
         "img": "../src/assets/products/1181a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -417,7 +417,7 @@
     {
         "price": 5000,
         "id": 1182,
-        "title": "producto37",
+        "title": "Fall Guys",
         "img": "../src/assets/products/1182a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -426,7 +426,7 @@
     {
         "price": 5000,
         "id": 1183,
-        "title": "producto37",
+        "title": "Fall Guys",
         "img": "../src/assets/products/1183a.jpg",
         "category": "gamer",
         "quantity": 1
@@ -435,11 +435,11 @@
     {
         "price": 5000,
         "id": 1184,
-        "title": "producto37",
+        "title": "Fall Guys",
         "img": "../src/assets/products/1184a.jpg",
         "category": "gamer",
         "quantity": 1
         
-    }
+    } 
 
 ]

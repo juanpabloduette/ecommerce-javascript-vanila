@@ -12,6 +12,7 @@ body {
 	background-color: black;
 	color: var(--gris);
 	font-family: "Open Sans", sans-serif;
+	/* position: relative; */
 }
 
 .container {
@@ -22,6 +23,9 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* position: sticky;
+	top: 0;
+	z-index: 100; */
 }
 
 nav ul {
@@ -124,6 +128,19 @@ footer {
 	align-items: center;
 	font-size: 10px;
 	height: 70px;
+}
+
+.show-added-product {
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	background-color: #015c01;
+	padding: 15px 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 13px;
 }
 
 /* ESTILOS DEL MODAL CARRITO*/

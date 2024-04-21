@@ -2,6 +2,7 @@ const showProductsContent = document.getElementById("show-products");
 const showCart = document.getElementById("cart");
 const modal = document.getElementById("modal-content");
 const countProducts = document.getElementById("count-products");
+const showAddedProduct = document.getElementById("showaddedproduct");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -46,12 +47,24 @@ const showProducts = async () => {
 			}
 			// console.log(repeatProduct);
 
+			// COLOCAR UNA FUNCION PARA QUE APAREZCA UN CARTELITO QUE DIGA: AGREGASTE ${PRODUCTO} AL CARRITO
+			addedProduct();
 			renderCart(); // SI EL CARRITO ESTA CERRADO Y SE AGREGA UN PRODUCTO, EL CARRITO SE ABRE, CORREGIR
 			// console.log(cart);
 			cartCounter();
 			saveLocalStorage();
 		});
 	});
+};
+
+const addedProduct = () => {
+	showAddedProduct.innerHTML = `<p>Se agregó producto al carrito</p>`;
+	showAddedProduct.style.display = "block";
+
+	setTimeout(() => {
+		showAddedProduct.style.display = "none";
+		showAddedProduct.innerHTML = "";
+	}, 700);
 };
 
 const saveLocalStorage = () => {

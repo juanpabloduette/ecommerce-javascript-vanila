@@ -8,8 +8,8 @@ const renderCart = () => {
 		const modalHeader = document.createElement("div");
 		modalHeader.className = "modal-header";
 		modalHeader.innerHTML = `
-	<p>Carrito</p>
-	`;
+			<p>Carrito</p>
+		`;
 		modal.append(modalHeader);
 
 		const modalClose = document.createElement("button");
@@ -17,7 +17,6 @@ const renderCart = () => {
 		modalClose.className = "btn-close-modal";
 		modalClose.addEventListener("click", () => {
 			modal.style.display = "none";
-			console.log("CLICK");
 		});
 
 		modalHeader.append(modalClose);
@@ -119,4 +118,7 @@ const emptyCart = () => {
 		modal.style.display = "none";
 	});
 	modalCartEmpty.append(modalClose);
+	setTimeout(() => {
+		modal.style.display = "none";
+	}, 900);
 };
