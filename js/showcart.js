@@ -120,5 +120,5 @@ const emptyCart = () => {
 	modalCartEmpty.append(modalClose);
 	setTimeout(() => {
 		modal.style.display = "none";
-	}, 900);
+	}, 1000);
 };

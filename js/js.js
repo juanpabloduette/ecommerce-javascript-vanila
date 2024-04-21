@@ -45,20 +45,18 @@ const showProducts = async () => {
 					quantity: product.quantity,
 				});
 			}
-			// console.log(repeatProduct);
+			const titleAdded = product.title;
+			addedProduct(titleAdded);
 
-			// COLOCAR UNA FUNCION PARA QUE APAREZCA UN CARTELITO QUE DIGA: AGREGASTE ${PRODUCTO} AL CARRITO
-			addedProduct();
 			renderCart(); // SI EL CARRITO ESTA CERRADO Y SE AGREGA UN PRODUCTO, EL CARRITO SE ABRE, CORREGIR
-			// console.log(cart);
 			cartCounter();
 			saveLocalStorage();
 		});
 	});
 };
 
-const addedProduct = () => {
-	showAddedProduct.innerHTML = `<p>Se agregó producto al carrito</p>`;
+const addedProduct = (titleadded) => {
+	showAddedProduct.innerHTML = `<p>Se agregó <strong> mouse pad ${titleadded}</strong> al carrito</p>`;
 	showAddedProduct.style.display = "block";
 
 	setTimeout(() => {
