@@ -80,6 +80,7 @@ nav ul li a:hover {
 	bottom: 0px;
 	left: 25px;
 	font-weight: 600;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 .article {
