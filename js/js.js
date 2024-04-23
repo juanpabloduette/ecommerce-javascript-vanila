@@ -26,7 +26,7 @@ const showProducts = async () => {
 		addProduct.className = "btn-add";
 		content.append(addProduct);
 
-		addProduct.addEventListener("click", () => {
+		addProduct.addEventListener("click", (e) => {
 			const repeatProduct = cart.some(
 				(repeatProduct) => repeatProduct.id === product.id
 			);
@@ -48,7 +48,7 @@ const showProducts = async () => {
 			const titleAdded = product.title;
 			addedProduct(titleAdded);
 
-			renderCart(); // SI EL CARRITO ESTA CERRADO Y SE AGREGA UN PRODUCTO, EL CARRITO SE ABRE, CORREGIR
+			renderCart(e); // SI EL CARRITO ESTA CERRADO Y SE AGREGA UN PRODUCTO, EL CARRITO SE ABRE, CORREGIR
 			cartCounter();
 			saveLocalStorage();
 		});

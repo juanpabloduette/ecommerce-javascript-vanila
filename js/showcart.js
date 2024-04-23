@@ -1,4 +1,4 @@
-const renderCart = () => {
+const renderCart = (e) => {
 	if (cart.length === 0) {
 		emptyCart();
 	} else {
@@ -75,7 +75,16 @@ const renderCart = () => {
 		modalButtonBuy.className = "modal-button-buy";
 		modal.append(modalButtonBuy);
 	}
-	modal.style.display = "block";
+
+	// Parametro para que detecte si el e.target es el boton de addproduct, si se le hace click que no abra el modal.
+	if (e) {
+		if (e.srcElement.className === "btn-add") {
+		} else {
+			modal.style.display = "block";
+		}
+	}
+
+	// modal.style.display = "block";
 };
 
 showCart.addEventListener("click", renderCart);
