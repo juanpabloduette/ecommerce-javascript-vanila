@@ -12,6 +12,7 @@ body {
 	background-color: black;
 	color: var(--gris);
 	font-family: "Open Sans", sans-serif;
+	/* font-family: "PT Sans Narrow", sans-serif; */
 	/* position: relative; */
 }
 
@@ -38,7 +39,8 @@ nav ul li a {
 	text-decoration: none;
 	border: 1px solid transparent;
 	transition: ease 0.2s all;
-	font-size: 11px;
+	font-size: 12px;
+	/* letter-spacing: 1px; */
 }
 
 nav ul li a:hover {
@@ -135,17 +137,29 @@ footer {
 	position: fixed;
 	bottom: 10px;
 	left: 50%;
-	transform: translateX(-50%);
-	display: none;
+	/* transform: translateX(-50%); */
+	/* display: none; */
 	background-color: #015c01;
 	padding: 15px 10px;
 	border-radius: 5px;
 	text-align: center;
 	font-size: 13px;
 
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(100%) translateX(-50%);
+	transition: opacity 0.2s, transform 0.2s;
+
 	box-shadow: -1px -1px 15px -3px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -1px -1px 15px -3px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -1px -1px 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+.visible {
+	/* display: block; */
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0) translateX(-50%);
 }
 
 /* ESTILOS DEL MODAL CARRITO*/

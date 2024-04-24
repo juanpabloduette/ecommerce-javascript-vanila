@@ -48,7 +48,7 @@ const showProducts = async () => {
 			const titleAdded = product.title;
 			addedProduct(titleAdded);
 
-			renderCart(e); // SI EL CARRITO ESTA CERRADO Y SE AGREGA UN PRODUCTO, EL CARRITO SE ABRE, CORREGIR
+			renderCart(e); // que detecta el target para que no se abra el carrito cuando se agrega un producto al carrito.
 			cartCounter();
 			saveLocalStorage();
 		});
@@ -57,11 +57,18 @@ const showProducts = async () => {
 
 const addedProduct = (titleadded) => {
 	showAddedProduct.innerHTML = `<p>Se agregó <strong> mouse pad ${titleadded}</strong> al carrito</p>`;
-	showAddedProduct.style.display = "block";
+	// showAddedProduct.style.display = "block";
+	showAddedProduct.classList.add("visible");
+	setTimeout(() => {
+		// showAddedProduct.style.display = "none";
+		showAddedProduct.style.opacity = "0";
+	}, 500);
 
 	setTimeout(() => {
-		showAddedProduct.style.display = "none";
+		// showAddedProduct.style.display = "none";
+		showAddedProduct.classList.remove("visible");
 		showAddedProduct.innerHTML = "";
+		showAddedProduct.style.opacity = "1";
 	}, 700);
 };
 
