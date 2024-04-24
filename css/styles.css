@@ -167,7 +167,7 @@ footer {
 	position: absolute;
 	top: 44px;
 	right: 34px;
-	width: 500px;
+	width: 600px;
 	background-color: var(--gris);
 	color: black;
 	border-radius: 5px;
@@ -191,17 +191,21 @@ footer {
 	border-radius: 5px 5px 0 0;
 }
 
+.modal-product {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px 7px;
+}
+
 .modal-product img {
 	width: 100%;
 	max-width: 50px;
 	border: 1px solid black;
 }
 
-.modal-product {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 3px 7px;
+.product-title {
+	min-width: 200px;
 }
 
 .btn-close-modal {
