@@ -23,17 +23,17 @@ const renderCart = (e) => {
 		modalProductsContent.className = "modal-products-content";
 		modal.append(modalProductsContent);
 		cart.forEach((product) => {
-			const modalProductsContent = document.createElement("div");
-			modalProductsContent.className = "modal-products-content";
+			// const modalProductsContent = document.createElement("div");
+			// modalProductsContent.className = "modal-products-content";
 			const modalProduct = document.createElement("div");
 			modalProduct.className = "modal-product";
 			modalProduct.innerHTML = `
 		<img src="${product.img}" alt="${product.title}" >
 		<p>${product.title}</p>
         <p>$${product.price}</p>
-		<span class="substract">-</span>
+		<span class="substract"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13H16C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11H8Z" fill="#0F1729"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12Z" fill="#0F1729"></path> </g></svg></span>
         <p>${product.quantity} Un.</p>
-		<span class="add">+</span>
+		<span class="add"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Edit / Add_Plus_Circle"> <path id="Vector" d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></span>
         <p class="article__total">Total: $${
 									product.quantity * product.price
 								}</p>

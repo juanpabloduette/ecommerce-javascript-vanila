@@ -233,6 +233,7 @@ footer {
 .substract,
 .add {
 	cursor: pointer;
+	margin-top: 4px;
 }
 
 .delete-product {
