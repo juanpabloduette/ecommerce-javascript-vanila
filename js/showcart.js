@@ -2,7 +2,7 @@ const renderCart = (e) => {
 	if (cart.length === 0) {
 		emptyCart();
 	} else {
-		modal.style.width = "550px";
+		modal.style.width = "480px";
 		modal.innerHTML = "";
 		const modalHeader = document.createElement("div");
 		modalHeader.className = "modal-header";

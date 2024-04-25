@@ -20,13 +20,25 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+.top {
+	background-color: var(--gris);
+	color: black;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
 header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 	/* position: sticky;
 	top: 0;
 	z-index: 100; */
+	padding: 10px;
 }
 
 nav ul {
@@ -178,7 +190,7 @@ footer {
 	background-color: var(--gris);
 	color: black;
 	border-radius: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	/* border: 1px solid var(--gris); */
 	display: none;
 
@@ -213,7 +225,7 @@ footer {
 }
 
 .product-title {
-	min-width: 200px;
+	min-width: 180px;
 }
 
 .btn-close-modal {
@@ -222,6 +234,7 @@ footer {
 	background-color: transparent;
 	cursor: pointer;
 	padding: 4px 0px 0px 0px;
+	transition: ease 0.3s all;
 }
 
 .btn-close-modal-empty {
@@ -246,6 +259,13 @@ footer {
 .add {
 	cursor: pointer;
 	margin-top: 4px;
+	transition: ease 0.3s all;
+}
+
+.substract:hover,
+.add:hover,
+.btn-close-modal:hover {
+	transform: scale(1.1);
 }
 
 .delete-product {
