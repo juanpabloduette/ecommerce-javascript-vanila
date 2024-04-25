@@ -119,10 +119,17 @@ nav ul li a:hover {
 	padding: 10px 5px;
 	cursor: pointer;
 	transition: ease 0.2s all;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-add svg {
+	margin: 0 5px 2px 5px;
 }
 
 .btn-add:hover {
-	color: var(--gris);
+	color: white;
 }
 
 footer {
