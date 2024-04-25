@@ -203,6 +203,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 3px 7px;
+	border-bottom: 1px solid rgb(171, 171, 171);
 }
 
 .modal-product img {
@@ -220,7 +221,7 @@ footer {
 	color: var(--gris);
 	background-color: transparent;
 	cursor: pointer;
-	padding: 2px 4px;
+	padding: 4px 0px 0px 0px;
 }
 
 .btn-close-modal-empty {
