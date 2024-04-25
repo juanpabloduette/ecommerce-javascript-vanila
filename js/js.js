@@ -34,10 +34,8 @@ const showProducts = async () => {
 			</style>
 			<path class="st0" d="M9,13V7c0-2.2,1.8-4,4-4h0c2.2,0,4,1.8,4,4v6"></path>
 			<circle class="st0" cx="23" cy="22" r="7"></circle>
-			<!-- Modificamos el signo dentro del círculo para que sea un signo más -->
 			<line class="st0" x1="20" y1="22" x2="26" y2="22"></line>
 			<line class="st0" x1="23" y1="19" x2="23" y2="25"></line>
-			<!-- Cambiamos las puntas del bolso para que estén redondeadas -->
 			<polyline class="st0" points="23,29 3,29 5,9 21,9 21.6,15.1 " stroke-linecap="round"></polyline>
 			<rect y="-144" class="st3" width="536" height="680"></rect>
 		</g>
