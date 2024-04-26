@@ -97,7 +97,9 @@ header {
 }
 
 .navbar .dropdown-gamer:hover .dropdown-submenu,
-.navbar .dropdown-clubber:hover .dropdown-submenu {
+.navbar .dropdown-clubber:hover .dropdown-submenu,
+.navbar .dropdown-anime:hover .dropdown-submenu,
+.navbar .dropdown-sports:hover .dropdown-submenu {
 	display: block;
 }
 
