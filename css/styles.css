@@ -86,7 +86,7 @@ header {
 	display: block;
 }
 
-.navbar .dropdown-gamer .dropdown-submenu {
+.navbar .dropdown-submenu {
 	display: none;
 	position: absolute;
 	top: 0;
@@ -96,37 +96,10 @@ header {
 	z-index: 1;
 }
 
-.navbar .dropdown-gamer:hover .dropdown-submenu {
+.navbar .dropdown-gamer:hover .dropdown-submenu,
+.navbar .dropdown-clubber:hover .dropdown-submenu {
 	display: block;
 }
-
-.navbar .dropdown-gamer .dropdown-submenu a {
-	color: #c0c0c0;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-}
-
-.navbar .dropdown-gamer .dropdown-submenu a:hover {
-	background-color: #ddd;
-}
-/* nav ul {
-	display: flex;
-	list-style-type: none;
-}
-nav ul li a {
-	padding: 5px;
-	color: var(--gris);
-	text-decoration: none;
-	border: 1px solid transparent;
-	transition: ease 0.2s all;
-	font-size: 12px;
-}
-
-nav ul li a:hover {
-	border: 1px solid var(--gris);
-} */
 
 .slider img {
 	width: 100%;
