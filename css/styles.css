@@ -35,13 +35,83 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	/* position: sticky;
-	top: 0;
-	z-index: 100; */
 	padding: 10px;
 }
 
-nav ul {
+.navbar {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+.navbar li {
+	position: relative;
+}
+
+.navbar li a {
+	display: block;
+	color: #c0c0c0;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.navbar .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.navbar .dropdown-content a {
+	color: #c0c0c0;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.navbar .dropdown-gamer .dropdown-submenu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.navbar .dropdown-gamer:hover .dropdown-submenu {
+	display: block;
+}
+
+.navbar .dropdown-gamer .dropdown-submenu a {
+	color: #c0c0c0;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.navbar .dropdown-gamer .dropdown-submenu a:hover {
+	background-color: #ddd;
+}
+/* nav ul {
 	display: flex;
 	list-style-type: none;
 }
@@ -52,12 +122,11 @@ nav ul li a {
 	border: 1px solid transparent;
 	transition: ease 0.2s all;
 	font-size: 12px;
-	/* letter-spacing: 1px; */
 }
 
 nav ul li a:hover {
 	border: 1px solid var(--gris);
-}
+} */
 
 .slider img {
 	width: 100%;
@@ -184,7 +253,7 @@ footer {
 /* ESTILOS DEL MODAL CARRITO*/
 .modal-content {
 	position: absolute;
-	top: 44px;
+	top: 84px;
 	right: 34px;
 	width: 600px;
 	background-color: var(--gris);
