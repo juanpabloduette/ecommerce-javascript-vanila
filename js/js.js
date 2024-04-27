@@ -94,3 +94,18 @@ const saveLocalStorage = () => {
 };
 
 showProducts();
+
+document.addEventListener("DOMContentLoaded", function () {
+	const menuToggle = document.querySelector(".menu-toggle");
+	const menuIcons = document.querySelectorAll(".menu-icon");
+	const navBar = document.querySelector(".navbar");
+
+	menuToggle.addEventListener("click", function () {
+		menuIcons.forEach((icon) => {
+			icon.classList.toggle("open");
+		});
+		navBar.classList.toggle("open");
+
+		// console.log(navBar);
+	});
+});

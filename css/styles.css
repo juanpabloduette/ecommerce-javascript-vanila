@@ -41,6 +41,7 @@ header {
 .navbar {
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 .navbar ul {
@@ -68,6 +69,10 @@ header {
 	background-color: #333;
 	min-width: 160px;
 	z-index: 1;
+
+	box-shadow: -1px -1px 15px -3px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -1px -1px 15px -3px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px -1px 15px -3px rgba(0, 0, 0, 0.75);
 }
 
 .navbar .dropdown-content a {
@@ -101,6 +106,38 @@ header {
 .navbar .dropdown-anime:hover .dropdown-submenu,
 .navbar .dropdown-sports:hover .dropdown-submenu {
 	display: block;
+}
+
+@media screen and (max-width: 650px) {
+	.navbar {
+		display: none;
+		position: absolute;
+		top: 80px;
+	}
+
+	.menu-toggle {
+		cursor: pointer;
+	}
+	.menu-toggle .menu-icon {
+		display: block;
+		width: 30px;
+		height: 3px;
+		background-color: #c0c0c0;
+		margin: 6px 0;
+		transition: transform 0.3s ease;
+	}
+
+	.menu-toggle .menu-icon.open:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 5px);
+	}
+
+	.menu-toggle .menu-icon.open:nth-child(2) {
+		opacity: 0;
+	}
+
+	.menu-toggle .menu-icon.open:nth-child(3) {
+		transform: rotate(-45deg) translate(7px, -7px);
+	}
 }
 
 .slider img {
