@@ -98,13 +98,17 @@ showProducts();
 document.addEventListener("DOMContentLoaded", function () {
 	const menuToggle = document.querySelector(".menu-toggle");
 	const menuIcons = document.querySelectorAll(".menu-icon");
-	const navBar = document.querySelector(".navbar");
+	const navBar = document.getElementById("navbar");
 
 	menuToggle.addEventListener("click", function () {
 		menuIcons.forEach((icon) => {
 			icon.classList.toggle("open");
 		});
-		navBar.classList.toggle("open");
+
+		navBar.style.display = "block";
+		// navBar.classList.add("open");
+
+		// navBar.style.display = "block";
 
 		// console.log(navBar);
 	});
