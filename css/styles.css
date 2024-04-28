@@ -21,6 +21,10 @@ body {
 	margin: 0 auto;
 }
 
+.logo img {
+	width: 30px;
+}
+
 .top {
 	background-color: var(--gris);
 	color: black;

@@ -92,18 +92,24 @@ const saveLocalStorage = () => {
 
 showProducts();
 
+const categorias = document.getElementById("categorias");
+const gamer = document.getElementById("gamer");
+const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
+const navBar = document.getElementById("navbar");
+const menuToggle = document.querySelector(".menu-toggle");
+const menuIcons = document.querySelectorAll(".menu-icon");
+const dropDownContent = document.querySelector(".dropdown-content");
+
 const anchoVentana = window.innerWidth;
 const responsive = 650;
+
+const menuIconsAnimate = () => {
+	menuIcons.forEach((icon) => {
+		icon.classList.toggle("open");
+	});
+};
+
 if (anchoVentana < responsive) {
-	const menuToggle = document.querySelector(".menu-toggle");
-	const menuIcons = document.querySelectorAll(".menu-icon");
-	const navBar = document.getElementById("navbar");
-	const dropDownContent = document.querySelector(".dropdown-content");
-	const categorias = document.getElementById("categorias");
-	const gamer = document.getElementById("gamer");
-	const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
-	const cs2 = document.getElementById("cs2");
-	const dota = document.getElementById("dota");
 	categorias.addEventListener("click", () => {
 		dropDownContent.style.display === "block"
 			? (dropDownContent.style.display = "none")
@@ -116,24 +122,26 @@ if (anchoVentana < responsive) {
 			: (dropGamerSubMenu.style.display = "block");
 	});
 
-	cs2.addEventListener("click", () => {
-		/* for each a productos cs2 */
-		console.log("cs2");
-	});
-
-	dota.addEventListener("click", () => {
-		/* for each a productos dota */
-		console.log("dota");
-	});
-
 	/* Click en Hamburguesa*/
 	menuToggle.addEventListener("click", function () {
-		menuIcons.forEach((icon) => {
-			icon.classList.toggle("open");
-		});
+		menuIconsAnimate();
 
 		navBar.style.display === "block"
 			? (navBar.style.display = "none")
 			: (navBar.style.display = "block");
 	});
 }
+
+const cs2 = document.getElementById("cs2");
+const dota = document.getElementById("dota");
+cs2.addEventListener("click", () => {
+	/* for each a productos cs2 */
+	console.log("cs2");
+	navBar.style.display = "none";
+	menuIconsAnimate();
+});
+
+dota.addEventListener("click", () => {
+	/* for each a productos dota */
+	console.log("dota");
+});
