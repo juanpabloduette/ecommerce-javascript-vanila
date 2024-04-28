@@ -99,17 +99,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	const menuToggle = document.querySelector(".menu-toggle");
 	const menuIcons = document.querySelectorAll(".menu-icon");
 	const navBar = document.getElementById("navbar");
+	const dropDown = document.querySelector(".dropdown");
+	const dropDownContent = document.querySelector(".dropdown-content");
+
+	dropDown.addEventListener("click", () => {
+		if (dropDownContent.style.display === "block") {
+			dropDownContent.style.display = "none";
+		} else {
+			dropDownContent.style.display = "block";
+		}
+	});
 
 	menuToggle.addEventListener("click", function () {
 		menuIcons.forEach((icon) => {
 			icon.classList.toggle("open");
 		});
-
-		navBar.style.display = "block";
-		// navBar.classList.add("open");
-
-		// navBar.style.display = "block";
-
-		// console.log(navBar);
+		if (navBar.style.display === "block") {
+			navBar.style.display = "none";
+		} else {
+			navBar.style.display = "block";
+		}
 	});
 });
