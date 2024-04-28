@@ -74,15 +74,12 @@ const showProducts = async () => {
 
 const addedProduct = (titleadded) => {
 	showAddedProduct.innerHTML = `<p>Se agregó <strong> mouse pad ${titleadded}</strong> al carrito</p>`;
-	// showAddedProduct.style.display = "block";
 	showAddedProduct.classList.add("visible");
 	setTimeout(() => {
-		// showAddedProduct.style.display = "none";
 		showAddedProduct.style.opacity = "0";
 	}, 500);
 
 	setTimeout(() => {
-		// showAddedProduct.style.display = "none";
 		showAddedProduct.classList.remove("visible");
 		showAddedProduct.innerHTML = "";
 		showAddedProduct.style.opacity = "1";
@@ -95,29 +92,48 @@ const saveLocalStorage = () => {
 
 showProducts();
 
-document.addEventListener("DOMContentLoaded", function () {
+const anchoVentana = window.innerWidth;
+const responsive = 650;
+if (anchoVentana < responsive) {
 	const menuToggle = document.querySelector(".menu-toggle");
 	const menuIcons = document.querySelectorAll(".menu-icon");
 	const navBar = document.getElementById("navbar");
-	const dropDown = document.querySelector(".dropdown");
 	const dropDownContent = document.querySelector(".dropdown-content");
-
-	dropDown.addEventListener("click", () => {
-		if (dropDownContent.style.display === "block") {
-			dropDownContent.style.display = "none";
-		} else {
-			dropDownContent.style.display = "block";
-		}
+	const categorias = document.getElementById("categorias");
+	const gamer = document.getElementById("gamer");
+	const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
+	const cs2 = document.getElementById("cs2");
+	const dota = document.getElementById("dota");
+	categorias.addEventListener("click", () => {
+		dropDownContent.style.display === "block"
+			? (dropDownContent.style.display = "none")
+			: (dropDownContent.style.display = "block");
 	});
 
+	gamer.addEventListener("click", () => {
+		dropGamerSubMenu.style.display === "block"
+			? (dropGamerSubMenu.style.display = "none")
+			: (dropGamerSubMenu.style.display = "block");
+	});
+
+	cs2.addEventListener("click", () => {
+		/* for each a productos cs2 */
+		console.log("cs2");
+	});
+
+	dota.addEventListener("click", () => {
+		/* for each a productos dota */
+		console.log("dota");
+	});
+
+	/* Click en Hamburguesa*/
 	menuToggle.addEventListener("click", function () {
 		menuIcons.forEach((icon) => {
 			icon.classList.toggle("open");
 		});
-		if (navBar.style.display === "block") {
-			navBar.style.display = "none";
-		} else {
-			navBar.style.display = "block";
-		}
+
+		navBar.style.display === "block"
+			? (navBar.style.display = "none")
+			: (navBar.style.display = "block");
 	});
-});
+}

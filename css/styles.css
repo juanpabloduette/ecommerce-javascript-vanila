@@ -147,6 +147,14 @@ header {
 		display: none;
 	}
 
+	/*Hace que no se abran las categorias al hacer over en movil, se abren al hacer click en javascript*/
+	.navbar .dropdown-gamer:hover .dropdown-submenu,
+	.navbar .dropdown-clubber:hover .dropdown-submenu,
+	.navbar .dropdown-anime:hover .dropdown-submenu,
+	.navbar .dropdown-sports:hover .dropdown-submenu {
+		display: none;
+	}
+
 	.menu-toggle {
 		cursor: pointer;
 	}
