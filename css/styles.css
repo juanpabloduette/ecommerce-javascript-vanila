@@ -22,7 +22,7 @@ body {
 }
 
 .logo img {
-	width: 30px;
+	width: 48px;
 }
 
 .top {
@@ -112,9 +112,6 @@ header {
 	display: block;
 }
 
-.open {
-	display: block;
-}
 @media screen and (max-width: 650px) {
 	.navbar {
 		display: none;
