@@ -9,7 +9,17 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
-	const data = await response.json();
+	let data = await response.json();
+	showProductsContent.innerHTML = "";
+	addEventListener("click", (e) => {
+		// console.log(e.target);
+		if (e.target.textContent === "Dota") {
+			const dataDota = data.filter((product) => product.target === "Dota");
+			console.log(dataDota);
+			// data = dataDota;
+			return showProducts();
+		}
+	});
 	data.forEach((product) => {
 		let content = document.createElement("article");
 		content.className = "article";
@@ -109,6 +119,8 @@ const menuIconsAnimate = () => {
 	});
 };
 
+const dota = document.getElementById("dota");
+
 if (anchoVentana < responsive) {
 	categorias.addEventListener("click", () => {
 		dropDownContent.style.display === "block"
@@ -130,18 +142,10 @@ if (anchoVentana < responsive) {
 			? (navBar.style.display = "none")
 			: (navBar.style.display = "block");
 	});
+
+	dota.addEventListener("click", () => {
+		/* for each a productos dota */
+		navBar.style.display = "none";
+		menuIconsAnimate();
+	});
 }
-
-const cs2 = document.getElementById("cs2");
-const dota = document.getElementById("dota");
-cs2.addEventListener("click", () => {
-	/* for each a productos cs2 */
-	console.log("cs2");
-	navBar.style.display = "none";
-	menuIconsAnimate();
-});
-
-dota.addEventListener("click", () => {
-	/* for each a productos dota */
-	console.log("dota");
-});

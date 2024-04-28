@@ -5,6 +5,7 @@
         "title": "Hernan Cattaneo - Live",
         "img": "./src/assets/products/1050a.jpg",
         "category": "clubber",
+        "target": "Hernan Cattaneo",
         "quantity": 1
     },
     {
@@ -13,6 +14,7 @@
         "title": "Hernan Cattaneo - Original",
         "img": "./src/assets/products/1051a.jpg",
         "category": "clubber",
+        "target": "Hernan Cattaneo",
         "quantity": 1
     },
     {
@@ -21,6 +23,7 @@
         "title": "Hernan Cattaneo - Soud Beat",
         "img": "./src/assets/products/1052a.jpg",
         "category": "clubber",
+        "target": "Soud Beat",
         "quantity": 1
     },
     {
@@ -29,6 +32,7 @@
         "title": "Boris Brejcha",
         "img": "./src/assets/products/1053a.jpg",
         "category": "clubber",
+        "target": "Boris Brejcha",
         "quantity": 1
     },
     {
@@ -96,6 +100,7 @@
         "title": "Dota",
         "img": "./src/assets/products/1101a.jpg",
         "category": "gamer",
+        "target": "Dota",
         "quantity": 1
         
     },
@@ -105,6 +110,7 @@
         "title": "Dota",
         "img": "./src/assets/products/1102a.jpg",
         "category": "gamer",
+        "target": "Dota",
         "quantity": 1
         
     },
