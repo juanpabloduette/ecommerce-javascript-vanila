@@ -10,16 +10,16 @@ const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
 	let data = await response.json();
-	showProductsContent.innerHTML = "";
+	// showProductsContent.innerHTML = "";
 	addEventListener("click", (e) => {
 		// console.log(e.target);
 		if (e.target.textContent === "Dota") {
 			const dataDota = data.filter((product) => product.target === "Dota");
 			console.log(dataDota);
-			// data = dataDota;
-			return showProducts();
+			return dataDota;
 		}
 	});
+
 	data.forEach((product) => {
 		let content = document.createElement("article");
 		content.className = "article";
