@@ -1523,5 +1523,545 @@
         "category": "gamer",
         "target": "valorant",
         "quantity": 1
-    }      
+    },
+    {
+        "price": 8000,
+        "id": 1600,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1600a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1601,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1601a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1602,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1602a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1603,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1603a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1604,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1604a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1605,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1605a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1606,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1606a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1607,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1607a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1608,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1608a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1609,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1609a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1610,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1610a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1611,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1611a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1612,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1612a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1613,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1613a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1614,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1614a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1615,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1615a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1616,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1616a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1617,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1617a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1618,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1618a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1619,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1619a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1620,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1620a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1621,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1621a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1622,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1622a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1623,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1623a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1624,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1624a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1625,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1625a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1626,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1626a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1627,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1627a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1628,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1628a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1629,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1629a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1630,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1630a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1631,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1631a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1632,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1632a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1633,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1633a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1634,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1634a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1635,
+        "title": "Overwatch",
+        "img": "./src/assets/products/1635a.jpg",
+        "category": "gamer",
+        "target": "overwatch",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1651,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1651a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1652,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1652a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1653,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1653a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1654,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1654a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1655,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1655a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1656,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1656a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1657,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1657a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1658,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1658a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1659,
+        "title": "Starcraft 2",
+        "img": "./src/assets/products/1659a.jpg",
+        "category": "gamer",
+        "target": "starcraft",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1700,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1700a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1701,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1701a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1702,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1702a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1703,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1703a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1704,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1704a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1705,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1705a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1706,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1706a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1707,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1707a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },  
+    {
+        "price": 8000,
+        "id": 1708,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1708a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1709,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1709a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1710,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1710a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },   
+    {
+        "price": 8000,
+        "id": 1711,
+        "title": "Minecraft",
+        "img": "./src/assets/products/1711a.jpg",
+        "category": "gamer",
+        "target": "minecraft",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1750,
+        "title": "Age of Empires",
+        "img": "./src/assets/products/1750a.jpg",
+        "category": "gamer",
+        "target": "aeo",
+        "quantity": 1
+    },
+    {
+        "price": 8000,
+        "id": 1751,
+        "title": "Age of Empires",
+        "img": "./src/assets/products/1751a.jpg",
+        "category": "gamer",
+        "target": "aeo",
+        "quantity": 1
+    }, 
+    {
+        "price": 8000,
+        "id": 1752,
+        "title": "Age of Empires",
+        "img": "./src/assets/products/1752a.jpg",
+        "category": "gamer",
+        "target": "aeo",
+        "quantity": 1
+    }                        
 ]

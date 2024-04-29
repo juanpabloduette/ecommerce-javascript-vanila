@@ -13,6 +13,9 @@ const showProducts = async () => {
 	addEventListener("click", (e) => {
 		// console.log(e.target);
 		switch (e.target.textContent) {
+			case "Age of Empires":
+				const productsAeo = data.filter((product) => product.target === "aeo");
+				return renderProducts(productsAeo);
 			case "Assassin's Creed":
 				const productsAssasins = data.filter(
 					(product) => product.target === "assassins-creed"
@@ -46,6 +49,16 @@ const showProducts = async () => {
 					(product) => product.target === "League-of-Legends"
 				);
 				return renderProducts(productsLol);
+			case "Minecraft":
+				const productsMinecraft = data.filter(
+					(product) => product.target === "minecraft"
+				);
+				return renderProducts(productsMinecraft);
+			case "Overwatch":
+				const productsOverwatch = data.filter(
+					(product) => product.target === "overwatch"
+				);
+				return renderProducts(productsOverwatch);
 			case "PUBG":
 				const productsPubg = data.filter((product) => product.target === "pubg");
 				return renderProducts(productsPubg);
