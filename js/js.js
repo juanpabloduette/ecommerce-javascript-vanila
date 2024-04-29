@@ -3,16 +3,57 @@ const showCart = document.getElementById("cart");
 const modal = document.getElementById("modal-content");
 const countProducts = document.getElementById("count-products");
 const showAddedProduct = document.getElementById("showaddedproduct");
-
+const productsCategoriesTitle = document.getElementById(
+	"products-categories-title"
+);
+const navBar = document.getElementById("navbar");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
 	let data = await response.json();
-	addEventListener("click", (e) => {
-		// console.log(e.target);
+	navBar.addEventListener("click", (e) => {
+		e.target.textContent.toUpperCase() !== e.target.textContent
+			? (productsCategoriesTitle.innerText = e.target.textContent)
+			: productsCategoriesTitle;
+
 		switch (e.target.textContent) {
+			case "Gamer":
+				const productsGamer = data.filter(
+					(product) => product.category === "gamer"
+				);
+				return renderProducts(productsGamer);
+			case "Clubber":
+				const productsClubber = data.filter(
+					(product) => product.category === "clubber"
+				);
+				return renderProducts(productsClubber);
+			case "Anime":
+				const productsAnime = data.filter(
+					(product) => product.category === "anime"
+				);
+				return renderProducts(productsAnime);
+			case "Sports":
+				const productsSports = data.filter(
+					(product) => product.category === "sports"
+				);
+				return renderProducts(productsSports);
+			case "Music":
+				const productsMusic = data.filter(
+					(product) => product.category === "music"
+				);
+				return renderProducts(productsMusic);
+			case "Movies":
+				const productsMovies = data.filter(
+					(product) => product.category === "movies"
+				);
+				return renderProducts(productsMovies);
+			case "Super Heroes":
+				const productsHeroes = data.filter(
+					(product) => product.category === "super-heroes"
+				);
+				return renderProducts(productsHeroes);
 			case "Age of Empires":
 				const productsAeo = data.filter((product) => product.target === "aeo");
 				return renderProducts(productsAeo);
@@ -44,6 +85,9 @@ const showProducts = async () => {
 					(product) => product.target === "fortnite"
 				);
 				return renderProducts(productsFortnite);
+			case "Gta":
+				const productsGta = data.filter((product) => product.target === "gta");
+				return renderProducts(productsGta);
 			case "League of Legends":
 				const productsLol = data.filter(
 					(product) => product.target === "League-of-Legends"
@@ -59,9 +103,17 @@ const showProducts = async () => {
 					(product) => product.target === "overwatch"
 				);
 				return renderProducts(productsOverwatch);
-			case "PUBG":
+			case "Playerunknown's Battlegrounds":
 				const productsPubg = data.filter((product) => product.target === "pubg");
 				return renderProducts(productsPubg);
+			case "Starcraft 2":
+				const productsStarcraft = data.filter(
+					(product) => product.target === "starcraft"
+				);
+				return renderProducts(productsStarcraft);
+			case "World of Warcraft":
+				const productsWow = data.filter((product) => product.target === "wow");
+				return renderProducts(productsWow);
 			case "Valorant":
 				const productsValorant = data.filter(
 					(product) => product.target === "valorant"
@@ -71,11 +123,6 @@ const showProducts = async () => {
 			default:
 				break;
 		}
-		// if (e.target.textContent === "Dota") {
-		// 	const dataDota = data.filter((product) => product.target === "Dota");
-		// 	console.log(dataDota);
-		// 	return renderProducts(dataDota);
-		// }
 	});
 
 	const renderProducts = (param) => {
@@ -167,7 +214,7 @@ showProducts();
 const categorias = document.getElementById("categorias");
 const gamer = document.getElementById("gamer");
 const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
-const navBar = document.getElementById("navbar");
+
 const menuToggle = document.querySelector(".menu-toggle");
 const menuIcons = document.querySelectorAll(".menu-icon");
 const dropDownContent = document.querySelector(".dropdown-content");

@@ -16,6 +16,12 @@ body {
 	/* position: relative; */
 }
 
+.products__categories__title {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -62,7 +68,7 @@ header {
 	display: block;
 	color: #c0c0c0;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 10px 14px;
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -81,7 +87,7 @@ header {
 
 .navbar .dropdown-content a {
 	color: #c0c0c0;
-	padding: 12px 16px;
+	padding: 10px 14px;
 	text-decoration: none;
 	display: block;
 	text-align: left;
@@ -108,7 +114,9 @@ header {
 .navbar .dropdown-gamer:hover .dropdown-submenu,
 .navbar .dropdown-clubber:hover .dropdown-submenu,
 .navbar .dropdown-anime:hover .dropdown-submenu,
-.navbar .dropdown-sports:hover .dropdown-submenu {
+.navbar .dropdown-sports:hover .dropdown-submenu,
+.navbar .dropdown-movies:hover .dropdown-submenu,
+.navbar .dropdown-heroes:hover .dropdown-submenu {
 	display: block;
 }
 
