@@ -156,6 +156,10 @@ header {
 		display: none;
 	}
 
+	.product-units p {
+		padding: 0 2px !important;
+	}
+
 	.menu-toggle {
 		cursor: pointer;
 	}
@@ -181,8 +185,28 @@ header {
 	}
 }
 
+.slider {
+	background-color: #070707;
+	background: linear-gradient(110deg, #000000 8%, #0f0f0f 18%, #000000 33%);
+	background-size: 200% 100%;
+	-webkit-animation: 1.5s shine linear infinite;
+	animation: 1.5s shine linear infinite;
+}
+
 .slider img {
 	width: 100%;
+}
+
+@-webkit-keyframes shine {
+	to {
+		background-position-x: -200%;
+	}
+}
+
+@keyframes shine {
+	to {
+		background-position-x: -200%;
+	}
 }
 
 .show-products {
@@ -348,6 +372,7 @@ footer {
 	width: 100%;
 	max-width: 50px;
 	border: 1px solid black;
+	background-color: rgb(171, 171, 171); /* Esqueleto precarga*/
 }
 
 .product-title {
@@ -442,14 +467,14 @@ footer {
 		width: 98% !important;
 	}
 	.product-title {
-		min-width: 150px;
+		min-width: 165px;
 	}
 
 	.product-units {
 		flex-direction: column-reverse;
 		justify-content: flex-start;
-		background-color: black;
-		color: var(--gris);
+		background-color: rgb(163, 163, 163);
+		color: black;
 		border-radius: 10px;
 	}
 }
