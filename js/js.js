@@ -12,7 +12,18 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
-	let data = await response.json();
+	const data = await response.json();
+
+	function productsAleatories() {
+		let dataDuplicate = data.slice(0);
+		let productsAleatories = [];
+		for (let i = 0; i < 20; i++) {
+			let indexAleatory = Math.floor(Math.random() * dataDuplicate.length);
+			productsAleatories.push(dataDuplicate[indexAleatory]);
+			dataDuplicate.splice(indexAleatory, 1);
+		}
+		return productsAleatories;
+	}
 	navBar.addEventListener("click", (e) => {
 		e.target.textContent.toUpperCase() !== e.target.textContent &&
 			(productsCategoriesTitle.innerText = e.target.textContent);
@@ -299,7 +310,7 @@ const showProducts = async () => {
 			});
 		});
 	};
-	renderProducts(data);
+	renderProducts(productsAleatories());
 };
 
 const addedProduct = (titleadded) => {
