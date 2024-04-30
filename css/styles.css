@@ -126,7 +126,8 @@ header {
 .navbar .dropdown-sports:hover .dropdown-submenu,
 .navbar .dropdown-movies:hover .dropdown-submenu,
 .navbar .dropdown-heroes:hover .dropdown-submenu,
-.navbar .dropdown-cartoons:hover .dropdown-submenu {
+.navbar .dropdown-cartoons:hover .dropdown-submenu,
+.navbar .dropdown-series:hover .dropdown-submenu {
 	display: block;
 }
 
@@ -173,7 +174,8 @@ header {
 	.navbar .dropdown-sports:hover .dropdown-submenu,
 	.navbar .dropdown-movies:hover .dropdown-submenu,
 	.navbar .dropdown-heroes:hover .dropdown-submenu,
-	.navbar .dropdown-cartoons:hover .dropdown-submenu {
+	.navbar .dropdown-cartoons:hover .dropdown-submenu,
+	.navbar .dropdown-series:hover .dropdown-submenu {
 		display: none;
 	}
 

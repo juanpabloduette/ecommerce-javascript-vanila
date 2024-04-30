@@ -43,6 +43,11 @@ const showProducts = async () => {
 					(product) => product.category === "sports"
 				);
 				return renderProducts(productsSports);
+			case "Series":
+				const productsSeries = data.filter(
+					(product) => product.category === "series"
+				);
+				return renderProducts(productsSeries);
 			case "Music":
 				const productsMusic = data.filter(
 					(product) => product.category === "music"
@@ -201,6 +206,11 @@ const showProducts = async () => {
 					(product) => product.target === "star-wars"
 				);
 				return renderProducts(productsStarWars);
+			case "The Mandalorian":
+				const productsMandalorian = data.filter(
+					(product) => product.target === "the-mandalorian"
+				);
+				return renderProducts(productsMandalorian);
 			case "River Plate":
 				const productsRiver = data.filter(
 					(product) => product.target === "river-plate"

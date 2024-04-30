@@ -80,8 +80,6 @@ const renderCart = (e) => {
 			modal.style.display = "block";
 		}
 	}
-
-	// modal.style.display = "block";
 };
 
 showCart.addEventListener("click", renderCart);
