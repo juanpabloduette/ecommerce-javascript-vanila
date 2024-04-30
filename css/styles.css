@@ -25,6 +25,7 @@ body {
 }
 
 .products__categories__title {
+	width: 100%;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
