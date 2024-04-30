@@ -14,11 +14,15 @@ const showProducts = async () => {
 	const response = await fetch(URL_API);
 	let data = await response.json();
 	navBar.addEventListener("click", (e) => {
-		e.target.textContent.toUpperCase() !== e.target.textContent
-			? (productsCategoriesTitle.innerText = e.target.textContent)
-			: productsCategoriesTitle;
+		e.target.textContent.toUpperCase() !== e.target.textContent &&
+			(productsCategoriesTitle.innerText = e.target.textContent);
 
 		switch (e.target.textContent) {
+			case "Cartoons":
+				const productsCartoons = data.filter(
+					(product) => product.category === "cartoons"
+				);
+				return renderProducts(productsCartoons);
 			case "Gamer":
 				const productsGamer = data.filter(
 					(product) => product.category === "gamer"
@@ -54,6 +58,16 @@ const showProducts = async () => {
 					(product) => product.category === "super-heroes"
 				);
 				return renderProducts(productsHeroes);
+			case "The Simpsons":
+				const productsSimpsons = data.filter(
+					(product) => product.target === "simpsons"
+				);
+				return renderProducts(productsSimpsons);
+			case "Rick and Morty":
+				const productsRick = data.filter(
+					(product) => product.target === "rick-and-morty"
+				);
+				return renderProducts(productsRick);
 			case "Age of Empires":
 				const productsAeo = data.filter((product) => product.target === "aeo");
 				return renderProducts(productsAeo);
@@ -210,6 +224,7 @@ const saveLocalStorage = () => {
 
 showProducts();
 
+/* MENU RESPONSIVE */
 const categorias = document.getElementById("categorias");
 const gamer = document.getElementById("gamer");
 const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");

@@ -125,7 +125,8 @@ header {
 .navbar .dropdown-anime:hover .dropdown-submenu,
 .navbar .dropdown-sports:hover .dropdown-submenu,
 .navbar .dropdown-movies:hover .dropdown-submenu,
-.navbar .dropdown-heroes:hover .dropdown-submenu {
+.navbar .dropdown-heroes:hover .dropdown-submenu,
+.navbar .dropdown-cartoons:hover .dropdown-submenu {
 	display: block;
 }
 
