@@ -96,6 +96,11 @@ const showProducts = async () => {
 					(product) => product.target === "rick-and-morty"
 				);
 				return renderProducts(productsRick);
+			case "Boris Brejcha":
+				const productsBoris = data.filter(
+					(product) => product.target === "boris-brejcha"
+				);
+				return renderProducts(productsBoris);
 			case "John Digweed":
 				const productsDigweed = data.filter(
 					(product) => product.target === "digweed"
@@ -106,6 +111,16 @@ const showProducts = async () => {
 					(product) => product.target === "cattaneo"
 				);
 				return renderProducts(productsCattaneo);
+			case "Miss Monique":
+				const productsMiss = data.filter(
+					(product) => product.target === "miss-monique"
+				);
+				return renderProducts(productsMiss);
+			case "Tomorrowland":
+				const productsTomorrowland = data.filter(
+					(product) => product.target === "tomorrowland"
+				);
+				return renderProducts(productsTomorrowland);
 			case "Age of Empires":
 				const productsAeo = data.filter((product) => product.target === "aeo");
 				return renderProducts(productsAeo);
@@ -171,6 +186,41 @@ const showProducts = async () => {
 					(product) => product.target === "valorant"
 				);
 				return renderProducts(productsValorant);
+			case "Harry Potter":
+				const productsPotter = data.filter(
+					(product) => product.target === "harry-potter"
+				);
+				return renderProducts(productsPotter);
+			case "The Lord of the Rings":
+				const productsRings = data.filter(
+					(product) => product.target === "the-lord-of-the-rings"
+				);
+				return renderProducts(productsRings);
+			case "Star Wars":
+				const productsStarWars = data.filter(
+					(product) => product.target === "star-wars"
+				);
+				return renderProducts(productsStarWars);
+			case "River Plate":
+				const productsRiver = data.filter(
+					(product) => product.target === "river-plate"
+				);
+				return renderProducts(productsRiver);
+			case "Boca Juniors":
+				const productsBoca = data.filter(
+					(product) => product.target === "boca-juniors"
+				);
+				return renderProducts(productsBoca);
+			case "Racing Club":
+				const productsRacing = data.filter(
+					(product) => product.target === "racing-club"
+				);
+				return renderProducts(productsRacing);
+			case "Lionel Messi":
+				const productsMessi = data.filter(
+					(product) => product.target === "lionel-messi"
+				);
+				return renderProducts(productsMessi);
 
 			default:
 				break;

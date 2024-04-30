@@ -23,7 +23,7 @@
         "title": "Hernan Cattaneo - Soud Beat",
         "img": "./src/assets/products/1052a.jpg",
         "category": "clubber",
-        "target": "Soud Beat",
+        "target": "cattaneo",
         "quantity": 1
     },
     {
@@ -32,7 +32,7 @@
         "title": "Boris Brejcha",
         "img": "./src/assets/products/1053a.jpg",
         "category": "clubber",
-        "target": "Boris Brejcha",
+        "target": "boris-brejcha",
         "quantity": 1
     },
     {
@@ -2563,7 +2563,7 @@
         "title": "Messi 10 Barcelona",
         "img": "./src/assets/products/1923a.jpg",
         "category": "sports",
-        "target": "futbol-internacional",
+        "target": "lionel-messi",
         "quantity": 1
     },   
     {
@@ -2581,7 +2581,7 @@
         "title": "Lionel Messi Argentina",
         "img": "./src/assets/products/1925a.jpg",
         "category": "sports",
-        "target": "seleccion",
+        "target": "lionel-messi",
         "quantity": 1
     },   
     {
@@ -2608,7 +2608,7 @@
         "title": "Roman Riquelme 10 Boca Juniors",
         "img": "./src/assets/products/1928a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "boca-juniors",
         "quantity": 1
     },   
     {
@@ -2617,7 +2617,7 @@
         "title": "Diego Milito 22",
         "img": "./src/assets/products/1929a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "racing-club",
         "quantity": 1
     },   
     {
@@ -2644,7 +2644,7 @@
         "title": "Lisandro Lopez Racing",
         "img": "./src/assets/products/1932a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "racing-club",
         "quantity": 1
     },  
     {
@@ -2662,7 +2662,7 @@
         "title": "Carlos Tevez 32 Boca",
         "img": "./src/assets/products/1934a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "boca-juniors",
         "quantity": 1
     },  
     {
@@ -2707,7 +2707,7 @@
         "title": "Boca Juniors Bombonera",
         "img": "./src/assets/products/1939a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "boca-juniors",
         "quantity": 1
     }, 
     {
@@ -2716,7 +2716,7 @@
         "title": "Boca Juniors Bombonera",
         "img": "./src/assets/products/1940a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "boca-juniors",
         "quantity": 1
     }, 
     {
@@ -2842,7 +2842,7 @@
         "title": "Boca Juniors Bombonera",
         "img": "./src/assets/products/1954a.jpg",
         "category": "sports",
-        "target": "basquet",
+        "target": "boca-juniors",
         "quantity": 1
     },  
     {
@@ -2860,13 +2860,13 @@
         "title": "Roman Riquelme Boca Juniors",
         "img": "./src/assets/products/1956a.jpg",
         "category": "sports",
-        "target": "futbol-argentino",
+        "target": "boca-juniors",
         "quantity": 1
     },
     {
         "price": 8000,
         "id": 1957,
-        "title": "Roman Riquelme Boca Juniors",
+        "title": "Diego Maradona 86",
         "img": "./src/assets/products/1957a.jpg",
         "category": "sports",
         "target": "futbol-argentino",
