@@ -18,6 +18,11 @@ const showProducts = async () => {
 			(productsCategoriesTitle.innerText = e.target.textContent);
 
 		switch (e.target.textContent) {
+			case "Anime":
+				const productsAnime = data.filter(
+					(product) => product.category === "anime"
+				);
+				return renderProducts(productsAnime);
 			case "Cartoons":
 				const productsCartoons = data.filter(
 					(product) => product.category === "cartoons"
@@ -33,11 +38,6 @@ const showProducts = async () => {
 					(product) => product.category === "clubber"
 				);
 				return renderProducts(productsClubber);
-			case "Anime":
-				const productsAnime = data.filter(
-					(product) => product.category === "anime"
-				);
-				return renderProducts(productsAnime);
 			case "Sports":
 				const productsSports = data.filter(
 					(product) => product.category === "sports"
@@ -58,6 +58,34 @@ const showProducts = async () => {
 					(product) => product.category === "super-heroes"
 				);
 				return renderProducts(productsHeroes);
+			case "Dragon Ball Z":
+				const productsDbz = data.filter((product) => product.target === "dbz");
+				return renderProducts(productsDbz);
+			case "Hunter X":
+				const productsHunterx = data.filter(
+					(product) => product.target === "hunter-x"
+				);
+				return renderProducts(productsHunterx);
+			case "My Hero Academia":
+				const productsMyHero = data.filter(
+					(product) => product.target === "my-hero-academia"
+				);
+				return renderProducts(productsMyHero);
+			case "Naruto":
+				const productsNaruto = data.filter(
+					(product) => product.target === "Naruto"
+				);
+				return renderProducts(productsNaruto);
+			case "Kimetsu no Yaiba":
+				const productsKimetsu = data.filter(
+					(product) => product.target === "kimetsu-no-yaiba"
+				);
+				return renderProducts(productsKimetsu);
+			case "One Piece":
+				const productsOnePiece = data.filter(
+					(product) => product.target === "one-piece"
+				);
+				return renderProducts(productsOnePiece);
 			case "The Simpsons":
 				const productsSimpsons = data.filter(
 					(product) => product.target === "simpsons"
