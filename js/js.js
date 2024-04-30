@@ -96,6 +96,16 @@ const showProducts = async () => {
 					(product) => product.target === "rick-and-morty"
 				);
 				return renderProducts(productsRick);
+			case "John Digweed":
+				const productsDigweed = data.filter(
+					(product) => product.target === "digweed"
+				);
+				return renderProducts(productsDigweed);
+			case "Hernan Cattaneo":
+				const productsCattaneo = data.filter(
+					(product) => product.target === "cattaneo"
+				);
+				return renderProducts(productsCattaneo);
 			case "Age of Empires":
 				const productsAeo = data.filter((product) => product.target === "aeo");
 				return renderProducts(productsAeo);
@@ -254,6 +264,14 @@ showProducts();
 
 /* MENU RESPONSIVE */
 const categorias = document.getElementById("categorias");
+const anime = document.getElementById("anime");
+const dropAnimeSubMenu = document.querySelector(".dropdown-anime-submenu");
+const cartoons = document.getElementById("cartoons");
+const dropCartoonsSubMenu = document.querySelector(
+	".dropdown-cartoons-submenu"
+);
+const clubber = document.getElementById("clubber");
+const dropClubberSubMenu = document.querySelector(".dropdown-clubber-submenu");
 const gamer = document.getElementById("gamer");
 const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
 
@@ -278,7 +296,21 @@ if (anchoVentana < responsive) {
 			? (dropDownContent.style.display = "none")
 			: (dropDownContent.style.display = "block");
 	});
-
+	anime.addEventListener("click", () => {
+		dropAnimeSubMenu.style.display === "block"
+			? (dropAnimeSubMenu.style.display = "none")
+			: (dropAnimeSubMenu.style.display = "block");
+	});
+	cartoons.addEventListener("click", () => {
+		dropCartoonsSubMenu.style.display === "block"
+			? (dropCartoonsSubMenu.style.display = "none")
+			: (dropCartoonsSubMenu.style.display = "block");
+	});
+	clubber.addEventListener("click", () => {
+		dropClubberSubMenu.style.display === "block"
+			? (dropClubberSubMenu.style.display = "none")
+			: (dropClubberSubMenu.style.display = "block");
+	});
 	gamer.addEventListener("click", () => {
 		dropGamerSubMenu.style.display === "block"
 			? (dropGamerSubMenu.style.display = "none")

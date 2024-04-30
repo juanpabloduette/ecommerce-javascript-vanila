@@ -5,7 +5,7 @@
         "title": "Hernan Cattaneo - Live",
         "img": "./src/assets/products/1050a.jpg",
         "category": "clubber",
-        "target": "Hernan Cattaneo",
+        "target": "cattaneo",
         "quantity": 1
     },
     {
@@ -14,7 +14,7 @@
         "title": "Hernan Cattaneo - Original",
         "img": "./src/assets/products/1051a.jpg",
         "category": "clubber",
-        "target": "Hernan Cattaneo",
+        "target": "cattaneo",
         "quantity": 1
     },
     {
@@ -41,6 +41,7 @@
         "title": "John Digweed",
         "img": "./src/assets/products/1054a.jpg",
         "category": "clubber",
+        "target": "digweed",
         "quantity": 1
     },
     {
@@ -49,6 +50,7 @@
         "title": "Tomorrowland",
         "img": "./src/assets/products/1055a.jpg",
         "category": "clubber",
+        "target": "tomorrowland",
         "quantity": 1
     },
     {
@@ -57,6 +59,7 @@
         "title": "Tomorrowland",
         "img": "./src/assets/products/1056a.jpg",
         "category": "clubber",
+        "target": "tomorrowland",
         "quantity": 1
     },
     {
@@ -65,6 +68,7 @@
         "title": "Tomorrowland",
         "img": "./src/assets/products/1057a.jpg",
         "category": "clubber",
+        "target": "tomorrowland",
         "quantity": 1
     },
     {
@@ -73,6 +77,7 @@
         "title": "Tomorrowland",
         "img": "./src/assets/products/1058a.jpg",
         "category": "clubber",
+        "target": "tomorrowland",
         "quantity": 1
         
     },
@@ -82,6 +87,7 @@
         "title": "Tomorrowland",
         "img": "./src/assets/products/1059a.jpg",
         "category": "clubber",
+        "target": "tomorrowland",
         "quantity": 1
         
     },
@@ -91,6 +97,7 @@
         "title": "Miss Monique",
         "img": "./src/assets/products/1060a.jpg",
         "category": "clubber",
+        "target": "miss-monique",
         "quantity": 1
         
     },
