@@ -137,7 +137,6 @@ const showProducts = async () => {
 			<p class="article__price">$${product.price}</p>
 			`;
 			showProductsContent.append(content);
-
 			const addProduct = document.createElement("button");
 			addProduct.innerHTML = `Agregar al carrito <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="22px" height="22px" fill="#c0c0c0" stroke="#c0c0c0">
 			<g id="SVGRepo_bgCarrier" stroke-width="0"></g>

@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "badaboom";
+	src: url("../src/assets/fonts/badaboom.ttf");
+}
+
 :root {
 	--gris: #c0c0c0;
 }
@@ -21,7 +26,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 25px;
+	font-family: "badaboom", "Open Sans", sans-serif;
+	letter-spacing: 1px;
+	text-shadow: 0 0 45px #00adef;
+	color: #00adef;
 }
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -311,14 +322,11 @@ footer {
 	position: fixed;
 	bottom: 10px;
 	left: 50%;
-	/* transform: translateX(-50%); */
-	/* display: none; */
 	background-color: #015c01;
 	padding: 15px 10px;
 	border-radius: 5px;
 	text-align: center;
 	font-size: 13px;
-
 	visibility: hidden;
 	opacity: 0;
 	transform: translateY(100%) translateX(-50%);
@@ -330,7 +338,6 @@ footer {
 }
 
 .visible {
-	/* display: block; */
 	visibility: visible;
 	opacity: 1;
 	transform: translateY(0) translateX(-50%);
