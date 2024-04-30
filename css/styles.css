@@ -168,6 +168,9 @@ header {
 }
 
 @media screen and (max-width: 650px) {
+	.products__categories__title {
+		font-size: 15px;
+	}
 	.navbar {
 		display: none;
 		position: absolute;
