@@ -255,7 +255,7 @@ const showProducts = async () => {
 			content.className = "article";
 			content.innerHTML = `
 			<img src="${product.img}" alt="${product.title}" >
-			<p>${product.title}</p>
+			<p class="article__title">${product.title}</p>
 			<p class="article__category">Categoría: ${product.category}</p>
 			<p class="article__price">$${product.price}</p>
 			`;

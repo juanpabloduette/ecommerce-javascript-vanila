@@ -81,7 +81,7 @@ body {
 	height: 30px;
 }
 .top p {
-	animation: aparecer 0.6s forwards;
+	animation: aparecer 0.5s forwards;
 	animation-delay: 1s;
 	transform: scale(0);
 }
@@ -327,6 +327,11 @@ header {
 	border-radius: 5px 5px 0 0;
 }
 
+.article__title {
+	font-weight: 700;
+	font-size: 14px;
+}
+
 .article__category {
 	font-size: 12px;
 }
@@ -357,14 +362,23 @@ header {
 	color: white;
 }
 
-footer {
+.footer__developer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 10px;
+	font-size: 12px;
 	height: 70px;
 }
-
+.footer__developer a {
+	/* color: var(--gris); */
+	text-decoration: none;
+	text-shadow: 0 0 45px #00adef;
+	color: #00adef;
+	transition: ease 0.3s all;
+}
+.footer__developer a:hover {
+	text-shadow: 0px 0px 30px #00adef;
+}
 .show-added-product {
 	position: fixed;
 	bottom: 10px;
