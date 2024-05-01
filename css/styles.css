@@ -316,6 +316,9 @@ header {
 	font-size: 12px;
 	background-color: var(--gris);
 	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .article p {
