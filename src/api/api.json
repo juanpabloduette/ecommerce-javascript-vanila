@@ -6,7 +6,8 @@
         "img": "./src/assets/products/1050a.jpg",
         "category": "clubber",
         "target": "cattaneo",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -15,7 +16,8 @@
         "img": "./src/assets/products/1051a.jpg",
         "category": "clubber",
         "target": "cattaneo",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -24,7 +26,8 @@
         "img": "./src/assets/products/1052a.jpg",
         "category": "clubber",
         "target": "cattaneo",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -33,7 +36,8 @@
         "img": "./src/assets/products/1053a.jpg",
         "category": "clubber",
         "target": "boris-brejcha",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -42,7 +46,8 @@
         "img": "./src/assets/products/1054a.jpg",
         "category": "clubber",
         "target": "digweed",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -51,7 +56,8 @@
         "img": "./src/assets/products/1055a.jpg",
         "category": "clubber",
         "target": "tomorrowland",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -60,7 +66,8 @@
         "img": "./src/assets/products/1056a.jpg",
         "category": "clubber",
         "target": "tomorrowland",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -69,7 +76,8 @@
         "img": "./src/assets/products/1057a.jpg",
         "category": "clubber",
         "target": "tomorrowland",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -78,7 +86,8 @@
         "img": "./src/assets/products/1058a.jpg",
         "category": "clubber",
         "target": "tomorrowland",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -88,7 +97,8 @@
         "img": "./src/assets/products/1059a.jpg",
         "category": "clubber",
         "target": "tomorrowland",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -98,7 +108,8 @@
         "img": "./src/assets/products/1060a.jpg",
         "category": "clubber",
         "target": "miss-monique",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -108,7 +119,8 @@
         "img": "./src/assets/products/1101a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -118,7 +130,8 @@
         "img": "./src/assets/products/1102a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -128,7 +141,8 @@
         "img": "./src/assets/products/1103a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -138,7 +152,8 @@
         "img": "./src/assets/products/1104a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -148,7 +163,8 @@
         "img": "./src/assets/products/1106a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -158,7 +174,8 @@
         "img": "./src/assets/products/1107a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -168,7 +185,8 @@
         "img": "./src/assets/products/1111a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -178,7 +196,8 @@
         "img": "./src/assets/products/1113a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -188,7 +207,8 @@
         "img": "./src/assets/products/1114a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -198,7 +218,8 @@
         "img": "./src/assets/products/1115a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -208,7 +229,8 @@
         "img": "./src/assets/products/1116a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -218,7 +240,8 @@
         "img": "./src/assets/products/1117a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -228,7 +251,8 @@
         "img": "./src/assets/products/1118a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -238,7 +262,8 @@
         "img": "./src/assets/products/1119a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -248,7 +273,8 @@
         "img": "./src/assets/products/1120a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -258,7 +284,8 @@
         "img": "./src/assets/products/1121a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -268,7 +295,8 @@
         "img": "./src/assets/products/1122a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -278,7 +306,8 @@
         "img": "./src/assets/products/1123a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -288,7 +317,8 @@
         "img": "./src/assets/products/1124a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -298,7 +328,8 @@
         "img": "./src/assets/products/1125a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -308,7 +339,8 @@
         "img": "./src/assets/products/1126a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -318,7 +350,8 @@
         "img": "./src/assets/products/1127a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -328,7 +361,8 @@
         "img": "./src/assets/products/1128a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -338,7 +372,8 @@
         "img": "./src/assets/products/1129a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -348,7 +383,8 @@
         "img": "./src/assets/products/1130a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -358,7 +394,8 @@
         "img": "./src/assets/products/1131a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -368,7 +405,8 @@
         "img": "./src/assets/products/1132a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -378,7 +416,8 @@
         "img": "./src/assets/products/1133a.jpg",
         "category": "gamer",
         "target": "Dota",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -388,7 +427,8 @@
         "img": "./src/assets/products/1150a.jpg",
         "category": "gamer",
         "target": "Battlefield",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -398,7 +438,8 @@
         "img": "./src/assets/products/1151a.jpg",
         "category": "gamer",
         "target": "Battlefield",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -408,7 +449,8 @@
         "img": "./src/assets/products/1152a.jpg",
         "category": "gamer",
         "target": "Battlefield",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -418,7 +460,8 @@
         "img": "./src/assets/products/1153a.jpg",
         "category": "gamer",
         "target": "Battlefield",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -428,7 +471,8 @@
         "img": "./src/assets/products/1154a.jpg",
         "category": "gamer",
         "target": "Battlefield",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -438,7 +482,8 @@
         "img": "./src/assets/products/1155a.jpg",
         "category": "gamer",
         "target": "Battlefield",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -448,7 +493,8 @@
         "img": "./src/assets/products/1180a.jpg",
         "category": "gamer",
         "target": "Fall-Guys",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -458,7 +504,8 @@
         "img": "./src/assets/products/1181a.jpg",
         "category": "gamer",
         "target": "Fall-Guys",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -468,7 +515,8 @@
         "img": "./src/assets/products/1182a.jpg",
         "category": "gamer",
         "target": "Fall-Guys",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -478,7 +526,8 @@
         "img": "./src/assets/products/1183a.jpg",
         "category": "gamer",
         "target": "Fall-Guys",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -488,7 +537,8 @@
         "img": "./src/assets/products/1184a.jpg",
         "category": "gamer",
         "target": "Fall-Guys",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -498,7 +548,8 @@
         "img": "./src/assets/products/1200a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -508,7 +559,8 @@
         "img": "./src/assets/products/1201a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -518,7 +570,8 @@
         "img": "./src/assets/products/1202a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -528,7 +581,8 @@
         "img": "./src/assets/products/1203a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -538,7 +592,8 @@
         "img": "./src/assets/products/1204a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -548,7 +603,8 @@
         "img": "./src/assets/products/1205a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -558,7 +614,8 @@
         "img": "./src/assets/products/1206a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -568,7 +625,8 @@
         "img": "./src/assets/products/1207a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -578,7 +636,8 @@
         "img": "./src/assets/products/1208a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -588,7 +647,8 @@
         "img": "./src/assets/products/1209a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -598,7 +658,8 @@
         "img": "./src/assets/products/1210a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -608,7 +669,8 @@
         "img": "./src/assets/products/1211a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -618,7 +680,8 @@
         "img": "./src/assets/products/1212a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -628,7 +691,8 @@
         "img": "./src/assets/products/1213a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -638,7 +702,8 @@
         "img": "./src/assets/products/1214a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -648,7 +713,8 @@
         "img": "./src/assets/products/1215a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -658,7 +724,8 @@
         "img": "./src/assets/products/1216a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -668,7 +735,8 @@
         "img": "./src/assets/products/1217a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -678,7 +746,8 @@
         "img": "./src/assets/products/1218a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -688,7 +757,8 @@
         "img": "./src/assets/products/1219a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -698,7 +768,8 @@
         "img": "./src/assets/products/1220a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -708,7 +779,8 @@
         "img": "./src/assets/products/1221a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -718,7 +790,8 @@
         "img": "./src/assets/products/1222a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -728,7 +801,8 @@
         "img": "./src/assets/products/1223a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -738,7 +812,8 @@
         "img": "./src/assets/products/1224a.jpg",
         "category": "gamer",
         "target": "counter-strike",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -748,7 +823,8 @@
         "img": "./src/assets/products/1250a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -758,7 +834,8 @@
         "img": "./src/assets/products/1251a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -768,7 +845,8 @@
         "img": "./src/assets/products/1252a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -778,7 +856,8 @@
         "img": "./src/assets/products/1253a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -788,7 +867,8 @@
         "img": "./src/assets/products/1254a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -798,7 +878,8 @@
         "img": "./src/assets/products/1255a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -808,7 +889,8 @@
         "img": "./src/assets/products/1256a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -818,7 +900,8 @@
         "img": "./src/assets/products/1257a.jpg",
         "category": "anime",
         "target": "Naruto",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -828,7 +911,8 @@
         "img": "./src/assets/products/1300a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -838,7 +922,8 @@
         "img": "./src/assets/products/1301a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -848,7 +933,8 @@
         "img": "./src/assets/products/1302a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -858,7 +944,8 @@
         "img": "./src/assets/products/1303a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -868,7 +955,8 @@
         "img": "./src/assets/products/1304a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -878,7 +966,8 @@
         "img": "./src/assets/products/1305a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -888,7 +977,8 @@
         "img": "./src/assets/products/1306a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -898,7 +988,8 @@
         "img": "./src/assets/products/1307a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -908,7 +999,8 @@
         "img": "./src/assets/products/1308a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -918,7 +1010,8 @@
         "img": "./src/assets/products/1309a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -928,7 +1021,8 @@
         "img": "./src/assets/products/1310a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -938,7 +1032,8 @@
         "img": "./src/assets/products/1311a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -948,7 +1043,8 @@
         "img": "./src/assets/products/1312a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -958,7 +1054,8 @@
         "img": "./src/assets/products/1313a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -968,7 +1065,8 @@
         "img": "./src/assets/products/1314a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -978,7 +1076,8 @@
         "img": "./src/assets/products/1315a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -988,7 +1087,8 @@
         "img": "./src/assets/products/1316a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -998,7 +1098,8 @@
         "img": "./src/assets/products/1317a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1008,7 +1109,8 @@
         "img": "./src/assets/products/1318a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1018,7 +1120,8 @@
         "img": "./src/assets/products/1319a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1028,7 +1131,8 @@
         "img": "./src/assets/products/1320a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1038,7 +1142,8 @@
         "img": "./src/assets/products/1321a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },
     {
@@ -1048,7 +1153,8 @@
         "img": "./src/assets/products/1322a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1058,7 +1164,8 @@
         "img": "./src/assets/products/1323a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1068,7 +1175,8 @@
         "img": "./src/assets/products/1324a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1078,7 +1186,8 @@
         "img": "./src/assets/products/1325a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
         
     },  
     {
@@ -1088,7 +1197,8 @@
         "img": "./src/assets/products/1326a.jpg",
         "category": "gamer",
         "target": "League-of-Legends",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -1097,7 +1207,8 @@
         "img": "./src/assets/products/1400a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -1106,7 +1217,8 @@
         "img": "./src/assets/products/1401a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1115,7 +1227,8 @@
         "img": "./src/assets/products/1402a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1124,7 +1237,8 @@
         "img": "./src/assets/products/1403a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1133,7 +1247,8 @@
         "img": "./src/assets/products/1404a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1142,7 +1257,8 @@
         "img": "./src/assets/products/1405a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1151,7 +1267,8 @@
         "img": "./src/assets/products/1406a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1160,7 +1277,8 @@
         "img": "./src/assets/products/1407a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1169,7 +1287,8 @@
         "img": "./src/assets/products/1408a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1178,7 +1297,8 @@
         "img": "./src/assets/products/1409a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1187,7 +1307,8 @@
         "img": "./src/assets/products/1410a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },  
     {
         "price": 8000,
@@ -1196,7 +1317,8 @@
         "img": "./src/assets/products/1411a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
@@ -1205,7 +1327,8 @@
         "img": "./src/assets/products/1412a.jpg",
         "category": "gamer",
         "target": "pubg",
-        "quantity": 1
+        "quantity": 1,
+        "stock": 5
     },
     {
         "price": 8000,
