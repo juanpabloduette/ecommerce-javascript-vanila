@@ -289,7 +289,7 @@ const showProducts = async () => {
 				if (repeatProduct) {
 					cart.map((prod) => {
 						if (prod.id === product.id) {
-							prod.quantity++;
+							prod.quantity++; /* agregaría siempre que el stock sea mayor a 0 si no, avisar que no hay mas stock*/
 						}
 					});
 				} else {
