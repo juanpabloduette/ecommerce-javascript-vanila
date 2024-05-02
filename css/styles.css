@@ -188,8 +188,6 @@ header {
 	.navbar .dropdown-content {
 		position: initial;
 		background-color: #333;
-		/* min-width: 160px;
-		z-index: 1; */
 
 		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
 		-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
@@ -244,7 +242,7 @@ header {
 	}
 
 	.menu-toggle .menu-icon.open:nth-child(3) {
-		transform: rotate(-45deg) translate(7px, -7px);
+		transform: rotate(-45deg) translate(7px, -8px);
 	}
 }
 
@@ -298,7 +296,6 @@ header {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	/* display: inline-block; */
 	display: none;
 	text-align: center;
 	line-height: 20px;
@@ -319,6 +316,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	max-width: 240px;
 }
 
 .article p {
@@ -333,6 +331,7 @@ header {
 .article__title {
 	font-weight: 700;
 	font-size: 14px;
+	text-align: center;
 }
 
 .article__category {
@@ -365,6 +364,11 @@ header {
 	color: white;
 }
 
+.footer__employments {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .footer__developer {
 	display: flex;
 	justify-content: center;
@@ -373,11 +377,10 @@ header {
 	height: 70px;
 }
 .footer__developer a {
-	/* color: var(--gris); */
 	text-decoration: none;
 	text-shadow: 0 0 45px #00adef;
 	color: #00adef;
-	transition: ease 0.3s all;
+	transition: ease 0.2s all;
 }
 .footer__developer a:hover {
 	text-shadow: 0px 0px 30px #00adef;
@@ -554,7 +557,7 @@ header {
 	.product-units {
 		flex-direction: column-reverse;
 		justify-content: flex-start;
-		background-color: rgb(163, 163, 163);
+		background-color: rgb(172, 172, 172);
 		color: black;
 		border-radius: 10px;
 	}

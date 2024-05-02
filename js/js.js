@@ -269,7 +269,7 @@ const showProducts = async () => {
 					.st0{fill:none;stroke:#c0c0c0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 					.st1{fill:none;stroke:#c0c0c0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3;}
 					.st2{fill:none;stroke:#c0c0c0;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-					.st3{fill:none;stroke:transparent;} /* Cambiamos el color de la línea a transparente */
+					.st3{fill:none;stroke:transparent;}
 				</style>
 				<path class="st0" d="M9,13V7c0-2.2,1.8-4,4-4h0c2.2,0,4,1.8,4,4v6"></path>
 				<circle class="st0" cx="23" cy="22" r="7"></circle>
@@ -303,7 +303,6 @@ const showProducts = async () => {
 				}
 				const titleAdded = product.title;
 				addedProduct(titleAdded);
-
 				renderCart(e); // que detecta el target para que no se abra el carrito cuando se agrega un producto al carrito.
 				cartCounter();
 				saveLocalStorage();
@@ -334,6 +333,12 @@ const saveLocalStorage = () => {
 showProducts();
 
 /* MENU RESPONSIVE */
+
+// const categoriesItems = document.querySelectorAll(".categories");
+// categoriesItems.forEach((category) => {
+// 	console.log("asdf");
+// });
+
 const categorias = document.getElementById("categorias");
 const anime = document.getElementById("anime");
 const dropAnimeSubMenu = document.querySelector(".dropdown-anime-submenu");
@@ -359,7 +364,9 @@ const menuIconsAnimate = () => {
 	});
 };
 
-const dota = document.getElementById("dota");
+// document.addEventListener("mousemove", () => {
+// 	console.log("asdf");
+// });
 
 if (anchoVentana < responsive) {
 	categorias.addEventListener("click", () => {
@@ -397,9 +404,14 @@ if (anchoVentana < responsive) {
 			: (navBar.style.display = "block");
 	});
 
-	dota.addEventListener("click", () => {
-		/* for each a productos dota */
+	const closeItems = document.querySelectorAll(".close");
+	closeItems.forEach((item) => {
+		item.addEventListener("click", () => {
+			closeNavbarResponsive();
+		});
+	});
+	const closeNavbarResponsive = () => {
 		navBar.style.display = "none";
 		menuIconsAnimate();
-	});
+	};
 }
