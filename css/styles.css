@@ -316,6 +316,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin: 0 auto;
 	max-width: 240px;
 }
 
@@ -332,6 +333,7 @@ header {
 	font-weight: 700;
 	font-size: 14px;
 	text-align: center;
+	padding: 2px 5px !important;
 }
 
 .article__category {
