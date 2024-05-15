@@ -20,7 +20,10 @@ const showProducts = async () => {
 		for (let i = 0; i < 20; i++) {
 			let indexAleatory = Math.floor(Math.random() * dataDuplicate.length);
 			productsAleatories.push(dataDuplicate[indexAleatory]);
-			dataDuplicate.splice(indexAleatory, 1);
+			dataDuplicate.splice(
+				indexAleatory,
+				1
+			); /* quitamos el elemento para que no se repita  */
 		}
 		return productsAleatories;
 	}
@@ -289,7 +292,7 @@ const showProducts = async () => {
 				if (repeatProduct) {
 					cart.map((prod) => {
 						if (prod.id === product.id) {
-							prod.quantity++; /* agregaría siempre que el stock sea mayor a 0 si no, avisar que no hay mas stock*/
+							prod.quantity++; /* agregar siempre que el stock sea mayor a 1 si no, avisar que no hay mas stock, si es mayor, descontar 1 unidad del stock*/
 						}
 					});
 				} else {
@@ -363,10 +366,6 @@ const menuIconsAnimate = () => {
 		icon.classList.toggle("open");
 	});
 };
-
-// document.addEventListener("mousemove", () => {
-// 	console.log("asdf");
-// });
 
 if (anchoVentana < responsive) {
 	categorias.addEventListener("click", () => {

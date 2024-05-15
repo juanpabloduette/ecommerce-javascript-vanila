@@ -37,8 +37,6 @@ const renderCart = (e) => {
 				`;
 			modal.append(modalProduct);
 
-			// console.log(cart.length);
-
 			let substract = modalProduct.querySelector(".substract");
 
 			substract.addEventListener("click", () => {
