@@ -291,8 +291,27 @@ const showProducts = async () => {
 				);
 				if (repeatProduct) {
 					cart.map((prod) => {
+						// if(prod.quantity >= product.stock){return console.log(prod.quantity,product.stock)}
 						if (prod.id === product.id) {
-							prod.quantity++; /* agregar siempre que el stock sea mayor a 1 si no, avisar que no hay mas stock, si es mayor, descontar 1 unidad del stock*/
+							if(prod.quantity < product.stock){
+								prod.quantity++;
+								const titleAdded = product.title;
+								addedProduct(titleAdded);
+							}else{
+								// alert('No hay mas stock')
+								Toastify({
+									text: `No hay más stock`,
+									className: "info",
+									duration: 1000,
+									gravity: "bottom",
+									position: 'center',
+									close: true,
+									style: {
+										background: "#dc3545",
+									}
+								}).showToast();
+							}
+							// prod.quantity++;
 						}
 					});
 				} else {
@@ -302,10 +321,12 @@ const showProducts = async () => {
 						img: product.img,
 						price: product.price,
 						quantity: product.quantity,
+						stock: product.stock,
 					});
+					const titleAdded = product.title;
+					addedProduct(titleAdded);
 				}
-				const titleAdded = product.title;
-				addedProduct(titleAdded);
+				
 				renderCart(e); // que detecta el target para que no se abra el carrito cuando se agrega un producto al carrito.
 				cartCounter();
 				saveLocalStorage();
@@ -316,17 +337,29 @@ const showProducts = async () => {
 };
 
 const addedProduct = (titleadded) => {
-	showAddedProduct.innerHTML = `<p>Se agregó <strong> mouse pad ${titleadded}</strong> al carrito</p>`;
-	showAddedProduct.classList.add("visible");
-	setTimeout(() => {
-		showAddedProduct.style.opacity = "0";
-	}, 500);
+	// showAddedProduct.innerHTML = `<p>Se agregó <strong> mouse pad ${titleadded}</strong> al carrito</p>`;
+	// showAddedProduct.classList.add("visible");
+	// setTimeout(() => {
+	// 	showAddedProduct.style.opacity = "0";
+	// }, 500);
 
-	setTimeout(() => {
-		showAddedProduct.classList.remove("visible");
-		showAddedProduct.innerHTML = "";
-		showAddedProduct.style.opacity = "1";
-	}, 700);
+	// setTimeout(() => {
+	// 	showAddedProduct.classList.remove("visible");
+	// 	showAddedProduct.innerHTML = "";
+	// 	showAddedProduct.style.opacity = "1";
+	// }, 700);
+
+	Toastify({
+		text: `Se agregó mouse pad ${titleadded} al carrito `,
+		className: "info",
+		duration: 1000,
+		gravity: "bottom",
+		position: 'center',
+		close: true,
+		style: {
+			background: "#015c01",
+		}
+	}).showToast();
 };
 
 const saveLocalStorage = () => {
@@ -336,11 +369,6 @@ const saveLocalStorage = () => {
 showProducts();
 
 /* MENU RESPONSIVE */
-
-// const categoriesItems = document.querySelectorAll(".categories");
-// categoriesItems.forEach((category) => {
-// 	console.log("asdf");
-// });
 
 const categorias = document.getElementById("categorias");
 const anime = document.getElementById("anime");

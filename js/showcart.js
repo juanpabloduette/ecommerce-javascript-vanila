@@ -1,3 +1,5 @@
+let totalBuy = 0;
+
 const renderCart = (e) => {
 	if (cart.length === 0) {
 		emptyCart();
@@ -40,7 +42,7 @@ const renderCart = (e) => {
 			let substract = modalProduct.querySelector(".substract");
 
 			substract.addEventListener("click", () => {
-				if (product.quantity !== 1) {
+				if (product.quantity !== 1 && product.quantity <= product.stock) {
 					product.quantity--;
 					renderCart();
 					saveLocalStorage();
@@ -49,9 +51,25 @@ const renderCart = (e) => {
 
 			let add = modalProduct.querySelector(".add");
 			add.addEventListener("click", () => {
-				product.quantity++;
-				renderCart();
-				saveLocalStorage();
+				if(product.quantity < product.stock){
+					product.quantity++;
+					renderCart();
+					saveLocalStorage();
+				}else{
+					// alert('No hay más stock')
+					Toastify({
+						text: `No hay más stock`,
+						className: "info",
+						duration: 1000,
+						gravity: "bottom",
+						position: 'center',
+						close: true,
+						style: {
+							background: "#dc3545",
+						}
+					}).showToast();
+				}
+			
 			});
 
 			let deleteProduct = modalProduct.querySelector(".delete-product");
@@ -60,14 +78,15 @@ const renderCart = (e) => {
 			});
 		});
 
-		const total = cart.reduce((acc, el) => acc + el.price * el.quantity, 0);
+		totalBuy = cart.reduce((acc, el) => acc + el.price * el.quantity, 0);
 		const totalBuying = document.createElement("div");
 		totalBuying.className = "total-content";
-		totalBuying.innerHTML = `Total a pagar:<strong>$${total}</strong>`;
+		totalBuying.innerHTML = `Total a pagar:<strong>$${totalBuy}</strong>`;
 		modal.append(totalBuying);
 		const modalButtonBuy = document.createElement("button");
 		modalButtonBuy.innerText = "COMPRAR";
 		modalButtonBuy.className = "modal-button-buy";
+		modalButtonBuy.setAttribute("onclick", "btnBuy()");
 		modal.append(modalButtonBuy);
 	}
 
@@ -124,3 +143,8 @@ const emptyCart = () => {
 		modal.style.display = "none";
 	}, 1000);
 };
+
+function btnBuy(){
+	console.log("se envía al backend el total a pagar de:"+ totalBuy)
+	console.log(cart)
+}
