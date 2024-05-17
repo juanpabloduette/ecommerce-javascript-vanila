@@ -9,12 +9,10 @@ const productsCategoriesTitle = document.getElementById(
 const navBar = document.getElementById("navbar");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-let dataForSearch = [];
 const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
 	const data = await response.json();
-	dataForSearch = data.slice(0);
 	function productsAleatories(data) {
 		let dataDuplicate = data.slice(0);
 		let productsAleatories = [];
@@ -335,19 +333,19 @@ const showProducts = async () => {
 	renderProducts(productsAleatories(data));
 	const search = document.getElementById("search");
 
-search.addEventListener("input",(e) => {
-	fetchData().then(data => {
-		const filteredData = data.filter(item => 
-			item.title.toLowerCase().includes(e.target.value) || item.category.toLowerCase().includes(e.target.value)
-		);
-		if(filteredData.length == 0){
-			return showProductsContent.innerHTML = "No se encontraron resultados";
-		}else{
-			return renderProducts(filteredData)
-		}
-
+	search.addEventListener("input",(e) => {
+		showProducts().then(data => {
+			const filteredData = data.filter(item => 
+				item.title.toLowerCase().includes(e.target.value) || item.category.toLowerCase().includes(e.target.value) || item.target.toLowerCase().includes(e.target.value)
+			);
+			if(filteredData.length == 0){
+				return showProductsContent.innerHTML = "No se encontraron resultados";
+			}else{
+				return renderProducts(filteredData)
+			}
+		})
 	})
-})
+	return data
 };
 
 const addedProduct = (titleadded) => {
@@ -443,26 +441,4 @@ if (anchoVentana < responsive) {
 		navBar.style.display = "none";
 		menuIconsAnimate();
 	};
-}
-
-
-// fetch('./src/api/api.json')
-// .then(response => response.json())
-// .then(response => console.log(response))
-
-
-let fetchedData = []; 
-
-async function fetchData() {
-    try {
-        const response = await fetch('./src/api/api.json');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        fetchedData = await response.json();
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-
-	return fetchedData
 }
