@@ -8,12 +8,12 @@ const productsCategoriesTitle = document.getElementById(
 );
 const navBar = document.getElementById("navbar");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
+let dataForSearch = [];
 const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
 	const data = await response.json();
-
+	// dataForSearch = data.slice(0);
 	function productsAleatories() {
 		let dataDuplicate = data.slice(0);
 		let productsAleatories = [];
@@ -291,12 +291,10 @@ const showProducts = async () => {
 				);
 				if (repeatProduct) {
 					cart.map((prod) => {
-						// if(prod.quantity >= product.stock){return console.log(prod.quantity,product.stock)}
 						if (prod.id === product.id) {
 							if(prod.quantity < product.stock){
 								prod.quantity++;
-								const titleAdded = product.title;
-								addedProduct(titleAdded);
+								addedProduct(product.title);
 							}else{
 								// alert('No hay mas stock')
 								Toastify({
@@ -311,7 +309,6 @@ const showProducts = async () => {
 									}
 								}).showToast();
 							}
-							// prod.quantity++;
 						}
 					});
 				} else {
@@ -323,8 +320,7 @@ const showProducts = async () => {
 						quantity: product.quantity,
 						stock: product.stock,
 					});
-					const titleAdded = product.title;
-					addedProduct(titleAdded);
+					addedProduct(product.title);
 				}
 				
 				renderCart(e); // que detecta el target para que no se abra el carrito cuando se agrega un producto al carrito.
@@ -337,18 +333,6 @@ const showProducts = async () => {
 };
 
 const addedProduct = (titleadded) => {
-	// showAddedProduct.innerHTML = `<p>Se agregó <strong> mouse pad ${titleadded}</strong> al carrito</p>`;
-	// showAddedProduct.classList.add("visible");
-	// setTimeout(() => {
-	// 	showAddedProduct.style.opacity = "0";
-	// }, 500);
-
-	// setTimeout(() => {
-	// 	showAddedProduct.classList.remove("visible");
-	// 	showAddedProduct.innerHTML = "";
-	// 	showAddedProduct.style.opacity = "1";
-	// }, 700);
-
 	Toastify({
 		text: `Se agregó mouse pad ${titleadded} al carrito `,
 		className: "info",
@@ -442,3 +426,9 @@ if (anchoVentana < responsive) {
 		menuIconsAnimate();
 	};
 }
+
+const search = document.getElementById("search");
+console.log(dataForSearch)
+search.addEventListener("input",(e)=>{
+	console.log(e.target.value)
+})
