@@ -8,13 +8,14 @@ const productsCategoriesTitle = document.getElementById(
 );
 const navBar = document.getElementById("navbar");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 let dataForSearch = [];
 const showProducts = async () => {
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
 	const data = await response.json();
-	// dataForSearch = data.slice(0);
-	function productsAleatories() {
+	dataForSearch = data.slice(0);
+	function productsAleatories(data) {
 		let dataDuplicate = data.slice(0);
 		let productsAleatories = [];
 		for (let i = 0; i < 20; i++) {
@@ -329,7 +330,7 @@ const showProducts = async () => {
 			});
 		});
 	};
-	renderProducts(productsAleatories());
+	renderProducts(productsAleatories(data));
 };
 
 const addedProduct = (titleadded) => {
@@ -427,8 +428,37 @@ if (anchoVentana < responsive) {
 	};
 }
 
+
+// fetch('./src/api/api.json')
+// .then(response => response.json())
+// .then(response => console.log(response))
+
+
+let fetchedData = []; 
+
+async function fetchData() {
+    try {
+        const response = await fetch('./src/api/api.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        fetchedData = await response.json();
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+
+	return fetchedData
+}
+
+
 const search = document.getElementById("search");
-console.log(dataForSearch)
-search.addEventListener("input",(e)=>{
-	console.log(e.target.value)
+
+search.addEventListener("input",(e) => {
+	fetchData().then(data => {
+		const filteredData = data.filter(item => 
+			item.title.toLowerCase().includes(e.target.value) || item.category.toLowerCase().includes(e.target.value)
+		);
+		console.log(filteredData)
+		return filteredData
+	})
 })

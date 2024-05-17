@@ -278,6 +278,7 @@ header {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 10px;
+	justify-content: center;
 }
 
 .search svg{
@@ -287,6 +288,9 @@ header {
 .search input{
 	padding: 5px;
 	border: none;
+	background-color: transparent;
+	color: var(--gris);
+	border-bottom: 1px solid var(--gris) 
 }
 
 .search input:focus{
