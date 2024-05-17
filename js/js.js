@@ -252,6 +252,8 @@ const showProducts = async () => {
 		}
 	});
 
+
+
 	const renderProducts = (param) => {
 		showProductsContent.innerHTML = "";
 		param.forEach((product) => {
@@ -331,6 +333,21 @@ const showProducts = async () => {
 		});
 	};
 	renderProducts(productsAleatories(data));
+	const search = document.getElementById("search");
+
+search.addEventListener("input",(e) => {
+	fetchData().then(data => {
+		const filteredData = data.filter(item => 
+			item.title.toLowerCase().includes(e.target.value) || item.category.toLowerCase().includes(e.target.value)
+		);
+		if(filteredData.length == 0){
+			return showProductsContent.innerHTML = "No se encontraron resultados";
+		}else{
+			return renderProducts(filteredData)
+		}
+
+	})
+})
 };
 
 const addedProduct = (titleadded) => {
@@ -449,16 +466,3 @@ async function fetchData() {
 
 	return fetchedData
 }
-
-
-const search = document.getElementById("search");
-
-search.addEventListener("input",(e) => {
-	fetchData().then(data => {
-		const filteredData = data.filter(item => 
-			item.title.toLowerCase().includes(e.target.value) || item.category.toLowerCase().includes(e.target.value)
-		);
-		console.log(filteredData)
-		return filteredData
-	})
-})
