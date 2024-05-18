@@ -345,7 +345,7 @@ const showProducts = async () => {
 				showProductsContent.innerHTML = "Ingrese datos para la busqueda o seleccione una opción desde CATEGORIAS en el menú";
 			}else {
 				const filteredData = data.filter(item => 
-					item.title.toLowerCase().includes(e.target.value) || item.category.toLowerCase().includes(e.target.value) || item.target.toLowerCase().includes(e.target.value)
+					item.title.toLowerCase().includes(e.target.value.toLowerCase()) || item.category.toLowerCase().includes(e.target.value.toLowerCase()) || item.target.toLowerCase().includes(e.target.value.toLowerCase())
 				);
 				if(filteredData.length == 0){
 					return showProductsContent.innerHTML = "No se encontraron resultados";

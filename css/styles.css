@@ -290,7 +290,7 @@ header {
 	border: none;
 	background-color: transparent;
 	color: var(--gris);
-	border-bottom: 1px solid var(--gris) 
+	border-bottom: 1px solid var(--gris)
 }
 
 .search input:focus{
