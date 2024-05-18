@@ -13,6 +13,10 @@
 	margin: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: black;
 	color: var(--gris);
@@ -397,27 +401,43 @@ header {
 	background-color: #2f2f2f;
 }
 
-.footer__employments {
+footer{
+	background-color: var(--gris);
+	color: #000000;
+}
+
+.footer__content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-height: 40vh;
+	font-size: 13px;
 }
+
+.footer__content ul{
+	list-style-type: none;
+}
+
 .footer__developer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 12px;
-	height: 70px;
+	height: 25px;
+	background-color: #000000;
 }
+
 .footer__developer a {
 	text-decoration: none;
 	text-shadow: 0 0 45px #00adef;
 	color: #00adef;
 	transition: ease 0.2s all;
 }
+
 .footer__developer a:hover {
 	text-shadow: 0px 0px 30px #00adef;
 }
+
 .show-added-product {
 	position: fixed;
 	bottom: 10px;

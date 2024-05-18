@@ -341,11 +341,19 @@ const showProducts = async () => {
 	search.addEventListener("input",(e) => {
 		productsCategoriesTitle.innerText = "Busqueda personalizada"
 			if(e.target.value !== ""){}
-			if(e.target.value === "" || e.target.value === " "){
+			if(e.target.value === ""){
+				renderProducts(productsAleatories(data));
+				productsCategoriesTitle.innerText = "Productos destacados"
+			}
+			if(e.target.value === " "){
 				showProductsContent.innerHTML = "Ingrese datos para la busqueda o seleccione una opción desde CATEGORIAS en el menú";
 			}else {
 				const filteredData = data.filter(item => 
-					item.title.toLowerCase().includes(e.target.value.toLowerCase()) || item.category.toLowerCase().includes(e.target.value.toLowerCase()) || item.target.toLowerCase().includes(e.target.value.toLowerCase())
+					item.title.toLowerCase().includes(e.target.value.toLowerCase()) 
+					||
+					item.category.toLowerCase().includes(e.target.value.toLowerCase()) 
+					||
+					item.target.toLowerCase().includes(e.target.value.toLowerCase())
 				);
 				if(filteredData.length == 0){
 					return showProductsContent.innerHTML = "No se encontraron resultados";
