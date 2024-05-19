@@ -7,11 +7,11 @@ const productsCategoriesTitle = document.getElementById(
 	"products-categories-title"
 );
 const navBar = document.getElementById("navbar");
-
 const home = document.getElementById("home");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const showProducts = async () => {
+	
 	const URL_API = "./src/api/api.json";
 	const response = await fetch(URL_API);
 	const data = await response.json();
@@ -255,15 +255,15 @@ const showProducts = async () => {
 	const renderProducts = (param) => {
 		showProductsContent.innerHTML = "";
 		param.forEach((product) => {
-			let content = document.createElement("article");
-			content.className = "article";
-			content.innerHTML = `
+			const article = document.createElement("article");
+			article.className = "article";
+			article.innerHTML = `
 			<img src="${product.img}" alt="${product.title}" >
 			<p class="article__title">${product.title}</p>
 			<p class="article__category">Categoría: ${product.category}</p>
 			<p class="article__price">$${product.price}</p>
 			`;
-			showProductsContent.append(content);
+			showProductsContent.append(article);
 			const addProduct = document.createElement("button");
 			addProduct.innerHTML = `Agregar al carrito <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="22px" height="22px" fill="#c0c0c0" stroke="#c0c0c0">
 			<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -284,7 +284,7 @@ const showProducts = async () => {
 			</g>
 		</svg>`;
 			addProduct.className = "btn-add";
-			content.append(addProduct);
+			article.append(addProduct);
 
 			addProduct.addEventListener("click", (e) => {
 				const repeatProduct = cart.some(
@@ -331,19 +331,22 @@ const showProducts = async () => {
 		});
 	};
 
+	/* BUTTON HOME MENU */
 	home.addEventListener("click",()=>{
 		renderProducts(productsAleatories(data));
 		productsCategoriesTitle.innerText = "PRODUCTOS DESTACADOS"
 	})
 
 	renderProducts(productsAleatories(data));
+
+	/* BARRA DE BUSQUEDA*/
 	const search = document.getElementById("search");
 	search.addEventListener("input",(e) => {
 		productsCategoriesTitle.innerText = "Busqueda personalizada"
-			if(e.target.value !== ""){}
+			// if(e.target.value !== ""){}
 			if(e.target.value === ""){
+				productsCategoriesTitle.innerText = "Productos destacados";
 				renderProducts(productsAleatories(data));
-				productsCategoriesTitle.innerText = "Productos destacados"
 			}
 			if(e.target.value === " "){
 				showProductsContent.innerHTML = "Ingrese datos para la busqueda o seleccione una opción desde CATEGORIAS en el menú";
@@ -355,11 +358,7 @@ const showProducts = async () => {
 					||
 					item.target.toLowerCase().includes(e.target.value.toLowerCase())
 				);
-				if(filteredData.length == 0){
-					return showProductsContent.innerHTML = "No se encontraron resultados";
-				}else{
-					return renderProducts(filteredData)
-				}
+				(filteredData.length == 0) ? showProductsContent.innerHTML = "No se encontraron resultados" : renderProducts(filteredData);
 			}
 	})
 };
@@ -383,79 +382,4 @@ const saveLocalStorage = () => {
 };
 
 showProducts();
-
-/* MENU RESPONSIVE */
-
-const categorias = document.getElementById("categorias");
-const anime = document.getElementById("anime");
-const dropAnimeSubMenu = document.querySelector(".dropdown-anime-submenu");
-const cartoons = document.getElementById("cartoons");
-const dropCartoonsSubMenu = document.querySelector(
-	".dropdown-cartoons-submenu"
-);
-const clubber = document.getElementById("clubber");
-const dropClubberSubMenu = document.querySelector(".dropdown-clubber-submenu");
-const gamer = document.getElementById("gamer");
-const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
-
-const menuToggle = document.querySelector(".menu-toggle");
-const menuIcons = document.querySelectorAll(".menu-icon");
-const dropDownContent = document.querySelector(".dropdown-content");
-
-const anchoVentana = window.innerWidth;
-const responsive = 650;
-
-const menuIconsAnimate = () => {
-	menuIcons.forEach((icon) => {
-		icon.classList.toggle("open");
-	});
-};
-
-if (anchoVentana < responsive) {
-	categorias.addEventListener("click", () => {
-		dropDownContent.style.display === "block"
-			? (dropDownContent.style.display = "none")
-			: (dropDownContent.style.display = "block");
-	});
-	anime.addEventListener("click", () => {
-		dropAnimeSubMenu.style.display === "block"
-			? (dropAnimeSubMenu.style.display = "none")
-			: (dropAnimeSubMenu.style.display = "block");
-	});
-	cartoons.addEventListener("click", () => {
-		dropCartoonsSubMenu.style.display === "block"
-			? (dropCartoonsSubMenu.style.display = "none")
-			: (dropCartoonsSubMenu.style.display = "block");
-	});
-	clubber.addEventListener("click", () => {
-		dropClubberSubMenu.style.display === "block"
-			? (dropClubberSubMenu.style.display = "none")
-			: (dropClubberSubMenu.style.display = "block");
-	});
-	gamer.addEventListener("click", () => {
-		dropGamerSubMenu.style.display === "block"
-			? (dropGamerSubMenu.style.display = "none")
-			: (dropGamerSubMenu.style.display = "block");
-	});
-
-	/* Click en Hamburguesa*/
-	menuToggle.addEventListener("click", function () {
-		menuIconsAnimate();
-
-		navBar.style.display === "block"
-			? (navBar.style.display = "none")
-			: (navBar.style.display = "block");
-	});
-
-	const closeItems = document.querySelectorAll(".close");
-	closeItems.forEach((item) => {
-		item.addEventListener("click", () => {
-			closeNavbarResponsive();
-		});
-	});
-	const closeNavbarResponsive = () => {
-		navBar.style.display = "none";
-		menuIconsAnimate();
-	};
-}
 
