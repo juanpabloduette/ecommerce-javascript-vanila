@@ -415,12 +415,25 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 40vh;
+	min-height: 30vh;
 	font-size: 13px;
 }
 
 .footer__content ul{
 	list-style-type: none;
+}
+.pagos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 10vh;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.pagos img{
+	width: 50px;
+	padding: 3px;
 }
 
 .footer__developer {
