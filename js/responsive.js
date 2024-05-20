@@ -54,7 +54,7 @@ if (anchoVentana < responsive) {
 			: (dropGamerSubMenu.style.display = "block");
 	});
 	movies.addEventListener("click", () => {
-		dropGamerSubMenu.style.display === "block"
+		dropMoviesSubMenu.style.display === "block"
 			? (dropMoviesSubMenu.style.display = "none")
 			: (dropMoviesSubMenu.style.display = "block");
 	});
