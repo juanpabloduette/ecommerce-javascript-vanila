@@ -631,6 +631,15 @@ footer{
 		color: black;
 		border-radius: 10px;
 	}
+
+	.search{
+		justify-content: center;
+	}
+	.search__products{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media screen and (max-width: 400px) {

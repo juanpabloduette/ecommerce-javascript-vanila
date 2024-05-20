@@ -376,6 +376,8 @@ showProducts();
 
 
 
+
+/* FOOTER */
 const pagos = document.querySelector(".pagos");
 const imagesPagos = ["./src/assets/images/mastercard.png","./src/assets/images/visa.png","./src/assets/images/amex.png","./src/assets/images/cabal.png","./src/assets/images/diners.png","./src/assets/images/tarjeta-naranja.png","./src/assets/images/mercadopago.png","./src/assets/images/pagofacil.png","./src/assets/images/rapipago.png"]
 

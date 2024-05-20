@@ -11,6 +11,8 @@ const clubber = document.getElementById("clubber");
 const dropClubberSubMenu = document.querySelector(".dropdown-clubber-submenu");
 const gamer = document.getElementById("gamer");
 const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
+const movies = document.getElementById("movies");
+const dropMoviesSubMenu = document.querySelector(".dropdown-movies-submenu");
 
 const menuToggle = document.querySelector(".menu-toggle");
 const menuIcons = document.querySelectorAll(".menu-icon");
@@ -50,6 +52,11 @@ if (anchoVentana < responsive) {
 		dropGamerSubMenu.style.display === "block"
 			? (dropGamerSubMenu.style.display = "none")
 			: (dropGamerSubMenu.style.display = "block");
+	});
+	movies.addEventListener("click", () => {
+		dropGamerSubMenu.style.display === "block"
+			? (dropMoviesSubMenu.style.display = "none")
+			: (dropMoviesSubMenu.style.display = "block");
 	});
 
 	/* CERRAR ENLACES GENERALES */
