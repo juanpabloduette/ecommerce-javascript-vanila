@@ -13,6 +13,8 @@ const gamer = document.getElementById("gamer");
 const dropGamerSubMenu = document.querySelector(".dropdown-gamer-submenu");
 const movies = document.getElementById("movies");
 const dropMoviesSubMenu = document.querySelector(".dropdown-movies-submenu");
+const sports = document.getElementById("sports");
+const dropSportsSubMenu = document.querySelector(".dropdown-sports-submenu");
 
 const menuToggle = document.querySelector(".menu-toggle");
 const menuIcons = document.querySelectorAll(".menu-icon");
@@ -57,6 +59,11 @@ if (anchoVentana < responsive) {
 		dropMoviesSubMenu.style.display === "block"
 			? (dropMoviesSubMenu.style.display = "none")
 			: (dropMoviesSubMenu.style.display = "block");
+	});
+	sports.addEventListener("click", () => {
+		dropSportsSubMenu.style.display === "block"
+			? (dropSportsSubMenu.style.display = "none")
+			: (dropSportsSubMenu.style.display = "block");
 	});
 
 	/* CERRAR ENLACES GENERALES */
