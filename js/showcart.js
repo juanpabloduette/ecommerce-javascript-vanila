@@ -145,6 +145,6 @@ const emptyCart = () => {
 };
 
 function btnBuy(){
-	console.log("se envía al backend el total a pagar de:"+ totalBuy)
+	console.log("se enviaria la info al backend para validar si los precios son correctos y se debe restar las unidades compradas del stock" + " se envía al backend el total a pagar de:"+ totalBuy)
 	console.log(cart)
 }
