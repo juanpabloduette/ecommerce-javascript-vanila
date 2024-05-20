@@ -384,3 +384,10 @@ const imagesPagos = ["./src/assets/images/mastercard.png","./src/assets/images/v
 imagesPagos.forEach((img) => {
 	pagos.innerHTML += `<img src="${img}" alt='${img}' />`
 })
+
+const envios = document.querySelector(".footer__envios");
+const imagesEnvios = ["./src/assets/images/correo.png","./src/assets/images/andreani.png"]
+
+imagesEnvios.forEach((img) => {
+	envios.innerHTML += `<img src="${img}" alt='${img}' />`
+})

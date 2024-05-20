@@ -468,6 +468,16 @@ footer{
 .footer__content ul{
 	list-style-type: none;
 }
+
+.footer__box{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 0 20px;
+}
 .pagos{
 	display: flex;
 	justify-content: center;
@@ -477,7 +487,17 @@ footer{
 	gap: 10px;
 }
 
-.pagos img{
+.footer__envios{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 10vh;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.pagos img,
+.footer__envios img{
 	width: 50px;
 	padding: 3px;
 }
