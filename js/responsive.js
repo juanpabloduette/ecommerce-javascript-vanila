@@ -52,6 +52,15 @@ if (anchoVentana < responsive) {
 			: (dropGamerSubMenu.style.display = "block");
 	});
 
+	/* CERRAR ENLACES GENERALES */
+	home.addEventListener("click",()=>{
+		closeNavbarResponsive();
+	})
+	const contact = document.querySelector(".contact");
+	contact.addEventListener("click",()=>{
+		closeNavbarResponsive();
+	})
+
 	/* Click en Hamburguesa*/
 	menuToggle.addEventListener("click", function () {
 		menuIconsAnimate();
@@ -60,7 +69,6 @@ if (anchoVentana < responsive) {
 			? (navBar.style.display = "none")
 			: (navBar.style.display = "block");
 	});
-
 	const closeItems = document.querySelectorAll(".close");
 	closeItems.forEach((item) => {
 		item.addEventListener("click", () => {

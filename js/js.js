@@ -317,7 +317,7 @@ const showProducts = async () => {
 	};
 
 	/* BUTTON HOME MENU */
-	home.addEventListener("click",()=>{
+	home.addEventListener("click",() => {
 		renderProducts(productsAleatories(data));
 		productsCategoriesTitle.innerText = "PRODUCTOS DESTACADOS"
 	})
@@ -346,7 +346,7 @@ const showProducts = async () => {
 				);
 				(filteredData.length == 0)
 				? 
-				showProductsContent.innerHTML = "No se encontraron resultados relacionados con la búsqueda"
+				showProductsContent.innerHTML = "No se encontraron resultados"
 				:
 				renderProducts(filteredData);
 				searchProducts.innerHTML = `"${filteredData.length}" productos encontrados`
