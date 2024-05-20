@@ -299,11 +299,11 @@ header {
 }
 
 .slider {
-	background-color: #070707;
-	background: linear-gradient(110deg, #000000 8%, #0f0f0f 18%, #000000 33%);
+	/* background-color: #070707; */
+	/* background: linear-gradient(110deg, #000000 8%, #0f0f0f 18%, #000000 33%); */
 	background-size: 200% 100%;
-	-webkit-animation: 1.5s shine linear infinite;
-	animation: 1.5s shine linear infinite;
+	/* -webkit-animation: 1.5s shine linear infinite;
+	animation: 1.5s shine linear infinite; */
 }
 
 .slider img {
