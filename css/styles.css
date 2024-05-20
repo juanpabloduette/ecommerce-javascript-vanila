@@ -461,7 +461,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 30vh;
+	min-height: 20vh;
 	font-size: 13px;
 }
 
@@ -477,6 +477,7 @@ footer{
 	align-items: flex-start;
 	flex-direction: column;
 	padding: 0 20px;
+	min-height: 15vh;
 }
 .pagos{
 	display: flex;
