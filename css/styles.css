@@ -301,6 +301,11 @@ header {
 	outline: none;
 }
 
+.search__products{
+	font-size: 12px;
+	padding: 10px;
+}
+
 .show-products {
 	padding: 30px 0;
 	display: grid;
