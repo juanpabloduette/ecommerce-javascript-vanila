@@ -30,10 +30,11 @@ const showProducts = async () => {
 		return productsAleatories;
 	}
 	navBar.addEventListener("click", (e) => {
-		(e.target.textContent.toUpperCase() !== e.target.textContent)&&(e.target.textContent.length < 200) &&
+		e.target.textContent.toUpperCase() !== e.target.textContent &&
+			e.target.textContent.length < 200 &&
 			(productsCategoriesTitle.innerText = e.target.textContent);
-			searchProducts.innerHTML = "";
-			search.value = "";
+		searchProducts.innerHTML = "";
+		search.value = "";
 		switch (e.target.textContent) {
 			case "Anime":
 				const productsAnime = data.filter(
@@ -278,21 +279,21 @@ const showProducts = async () => {
 				if (repeatProduct) {
 					cart.map((prod) => {
 						if (prod.id === product.id) {
-							if(prod.quantity < product.stock){
+							if (prod.quantity < product.stock) {
 								prod.quantity++;
 								addedProduct(product.title);
-							}else{
+							} else {
 								// alert('No hay mas stock')
 								Toastify({
 									text: `No hay más stock`,
 									className: "info",
 									duration: 1000,
 									gravity: "bottom",
-									position: 'center',
+									position: "center",
 									close: true,
 									style: {
 										background: "#dc3545",
-									}
+									},
 								}).showToast();
 							}
 						}
@@ -308,7 +309,7 @@ const showProducts = async () => {
 					});
 					addedProduct(product.title);
 				}
-				
+
 				renderCart(e); // que detecta el target para que no se abra el carrito cuando se agrega un producto al carrito.
 				cartCounter();
 				saveLocalStorage();
@@ -317,41 +318,43 @@ const showProducts = async () => {
 	};
 
 	/* BUTTON HOME MENU */
-	home.addEventListener("click",() => {
+	home.addEventListener("click", () => {
 		renderProducts(productsAleatories(data));
-		productsCategoriesTitle.innerText = "PRODUCTOS DESTACADOS"
-	})
+		productsCategoriesTitle.innerText = "PRODUCTOS DESTACADOS";
+	});
 
 	renderProducts(productsAleatories(data));
 
 	/* BARRA DE BUSQUEDA*/
-	search.addEventListener("input",(e) => {
+	search.addEventListener("input", (e) => {
 		searchProducts.innerHTML = "";
 		// search.addEventListener("blur",()=>{
 		// 	searchProducts.innerHTML = "";
 		// })
-		productsCategoriesTitle.innerText = "Busqueda personalizada"
-			if(e.target.value === ""){
-				productsCategoriesTitle.innerText = "Productos destacados";
-				renderProducts(productsAleatories(data));
-			}else if(e.target.value === " "){
-				showProductsContent.innerHTML = "Ingrese datos para la busqueda o seleccione una opción desde CATEGORIAS en el menú";
-			}else {
-				const filteredData = data.filter(item => 
-					item.title.toLowerCase().includes(e.target.value.toLowerCase()) 
-					||
-					item.category.toLowerCase().includes(e.target.value.toLowerCase()) 
-					||
+		productsCategoriesTitle.innerText = "Busqueda personalizada";
+
+		if (e.target.value === "") {
+			productsCategoriesTitle.innerText = "Productos destacados";
+			renderProducts(productsAleatories(data));
+		} else if (e.target.value.length <= " ") {
+			showProductsContent.innerHTML =
+				"Ingrese datos para la busqueda o seleccione una opción desde CATEGORIAS en el menú";
+		} else if (e.target.value.length < 3) {
+			showProductsContent.innerHTML =
+				"Ingrese más de 2 caracteres para la búsqueda";
+		} else {
+			const filteredData = data.filter(
+				(item) =>
+					item.title.toLowerCase().includes(e.target.value.toLowerCase()) ||
+					item.category.toLowerCase().includes(e.target.value.toLowerCase()) ||
 					item.target.toLowerCase().includes(e.target.value.toLowerCase())
-				);
-				(filteredData.length == 0)
-				? 
-				showProductsContent.innerHTML = "No se encontraron resultados"
-				:
-				renderProducts(filteredData);
-				searchProducts.innerHTML = `"${filteredData.length}" productos encontrados`
-			}
-	})
+			);
+			filteredData.length == 0
+				? (showProductsContent.innerHTML = "No se encontraron resultados")
+				: renderProducts(filteredData);
+			searchProducts.innerHTML = `"${filteredData.length}" productos encontrados`;
+		}
+	});
 };
 
 const addedProduct = (titleadded) => {
@@ -360,11 +363,11 @@ const addedProduct = (titleadded) => {
 		className: "info",
 		duration: 1000,
 		gravity: "bottom",
-		position: 'center',
+		position: "center",
 		close: true,
 		style: {
 			background: "#015c01",
-		}
+		},
 	}).showToast();
 };
 
@@ -374,20 +377,30 @@ const saveLocalStorage = () => {
 
 showProducts();
 
-
-
-
 /* FOOTER */
 const pagos = document.querySelector(".pagos");
-const imagesPagos = ["./src/assets/images/mastercard.png","./src/assets/images/visa.png","./src/assets/images/amex.png","./src/assets/images/cabal.png","./src/assets/images/diners.png","./src/assets/images/tarjeta-naranja.png","./src/assets/images/mercadopago.png","./src/assets/images/pagofacil.png","./src/assets/images/rapipago.png"]
+const imagesPagos = [
+	"./src/assets/images/mastercard.png",
+	"./src/assets/images/visa.png",
+	"./src/assets/images/amex.png",
+	"./src/assets/images/cabal.png",
+	"./src/assets/images/diners.png",
+	"./src/assets/images/tarjeta-naranja.png",
+	"./src/assets/images/mercadopago.png",
+	"./src/assets/images/pagofacil.png",
+	"./src/assets/images/rapipago.png",
+];
 
 imagesPagos.forEach((img) => {
-	pagos.innerHTML += `<img src="${img}" alt='${img}' />`
-})
+	pagos.innerHTML += `<img src="${img}" alt='${img}' />`;
+});
 
 const envios = document.querySelector(".footer__envios");
-const imagesEnvios = ["./src/assets/images/correo.png","./src/assets/images/andreani.png"]
+const imagesEnvios = [
+	"./src/assets/images/correo.png",
+	"./src/assets/images/andreani.png",
+];
 
 imagesEnvios.forEach((img) => {
-	envios.innerHTML += `<img src="${img}" alt='${img}' />`
-})
+	envios.innerHTML += `<img src="${img}" alt='${img}' />`;
+});
