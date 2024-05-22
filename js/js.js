@@ -336,7 +336,7 @@ const showProducts = async () => {
 		if (e.target.value === "") {
 			productsCategoriesTitle.innerText = "Productos destacados";
 			renderProducts(productsAleatories(data));
-		} else if (e.target.value.length <= " ") {
+		} else if (e.target.value === " ") {
 			showProductsContent.innerHTML =
 				"Ingrese datos para la busqueda o seleccione una opción desde CATEGORIAS en el menú";
 		} else if (e.target.value.length < 3) {
